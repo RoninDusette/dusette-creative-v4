@@ -10,11 +10,33 @@ html, body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-size: 2.7rem;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 2.3rem;
+    font-weight: bolder;
+}
+
+.text-dark-brown {
+    color: #302B27;
+}
+
+.text-light-white {
+    color: #F5F3F5;
+}
+
+.text-red {
+    color: #aa0901;
+}
+
 .nav-link {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.5em;
     font-weight: 600;
-    color: white !important;
+    color: #F5F3F5 !important;
     text-decoration: none;
     cursor: pointer;
     transition: color .5s ease;
@@ -22,14 +44,11 @@ html, body {
 
 .nav-link:hover {
     color: #aa0901 !important;
+    text-shadow: 1px -1px black;
 }
 
 .nav-brand-image {
     width: 15%;
-}
-
-.text-red {
-    color: #aa0901;
 }
 
 .home-hero-wrapper {
@@ -38,10 +57,85 @@ html, body {
     background: url("../img/hero-images/dusette-creative-home-background.png") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
+    position: relative;
 }
 
 .navbar-underlay {
-    background-color: black;
-    opacity: .7;
+    background-color: #302B27;
+    opacity: .8;
     min-height: 84px;
+}
+
+.home-section-2-wrapper {
+    background-color: #302B27;
+    color: #F5F3F5;
+    min-height: 500px;
+}
+
+.what-i-do > li {
+    font-size: 1.4rem;
+    color: #F5F3F5;
+    transition: color .5s ease;
+}
+
+.what-i-do > li:hover {
+    color: #aa0901;
+    cursor: pointer;
+}
+
+.inner-what-i-do-container {
+    border-radius: 15px;
+    border: 5px solid #F5F3F5;
+    transition: border-color .5s ease;
+}
+
+.inner-what-i-do-container:hover {
+    border-color: #aa0901;
+}
+
+.home-section-3-row {
+    background-color: #F5F3F5;
+    min-height: 300px;
+}
+
+.home-hero-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: .2;
+}
+
+.home-hero-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.home-hero-text > h1 {
+    background-color: #302B27;
+    opacity: .9;
+}
+
+.button-dark-bg {
+    font-size: 1.7rem;
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #F5F3F5;
+    border: 2px solid #F5F3F5;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: border-color .5s ease, padding .5s ease;
+}
+
+.button-dark-bg:hover {
+    text-decoration: none;
+    color: #F5F3F5;
+    border-color: #aa0901;
+    padding: 10px 28px;
 }
