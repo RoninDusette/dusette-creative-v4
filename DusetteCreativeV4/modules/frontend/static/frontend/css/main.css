@@ -1,0 +1,47 @@
+h1, h2, h3, h4, li {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h5, h6, p {
+    font-family: 'Cambay', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.nav-link {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white !important;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .5s ease;
+}
+
+.nav-link:hover {
+    color: #aa0901 !important;
+}
+
+.nav-brand-image {
+    width: 15%;
+}
+
+.text-red {
+    color: #aa0901;
+}
+
+.home-hero-wrapper {
+    height: 100vh;
+    width: 100vw;
+    background: url("../img/hero-images/dusette-creative-home-background.png") no-repeat center center;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.navbar-underlay {
+    background-color: black;
+    opacity: .7;
+    min-height: 84px;
+}

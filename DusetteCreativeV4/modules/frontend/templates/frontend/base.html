@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+{% include 'frontend/base_header.html'%}
+
+<body>
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+  {% include 'frontend/nav.html' %}
+
+  {% block content %}
+  {% endblock content %}
+
+{% include 'frontend/base_footer.html' %}
+
+</body>
+
+</html>
