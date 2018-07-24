@@ -61,7 +61,7 @@ h2 {
 }
 
 .navbar-underlay {
-    background-color: #302B27;
+    background-color: black;
     opacity: .8;
     min-height: 84px;
 }
@@ -120,6 +120,7 @@ h2 {
 .home-hero-text > h1 {
     background-color: #302B27;
     opacity: .9;
+    display: none;
 }
 
 .button-dark-bg {
@@ -137,5 +138,11 @@ h2 {
     text-decoration: none;
     color: #F5F3F5;
     border-color: #aa0901;
-    padding: 10px 28px;
+    padding: 10px 35px;
+}
+
+#home-what-i-do-box-1,
+#home-what-i-do-box-2,
+#home-what-i-do-box-3 {
+    display: none;
 }
