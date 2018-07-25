@@ -3,16 +3,21 @@
 
 {% include 'frontend/base_header.html'%}
 
-<body>
-  <!--[if lte IE 9]>
+<head><link rel="stylesheet" type="text/css" href="DusetteCreativeV4/modules/frontend/static/frontend/css/main.css"/></head>
+<body onload="pageLoading()">
+  {% include 'frontend/loader.html' %}
+  <div id="site-content">
+      <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
+
   {% include 'frontend/nav.html' %}
 
   {% block content %}
   {% endblock content %}
 
 {% include 'frontend/base_footer.html' %}
+  </div>
 
 </body>
 
