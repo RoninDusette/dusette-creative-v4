@@ -32,6 +32,38 @@ h2 {
     color: #aa0901;
 }
 
+.img-full {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+}
+
+.link-light {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.0rem;
+    color: #F5F3F5;
+    transition: color .5s ease;
+    text-decoration: none !important;
+}
+
+.link-light:hover {
+    color: #aa0901;
+    cursor: pointer;
+}
+
+.link-dark {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 1.0rem;
+    color: #302B27;
+    transition: color .5s ease;
+    text-decoration: none !important;
+}
+
+.link-dark:hover {
+    color: #aa0901;
+    cursor: pointer;
+}
+
 .nav-link {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 1.5em;
@@ -67,18 +99,31 @@ h2 {
 }
 
 .home-section-2-wrapper {
-    background-color: #302B27;
+    background-color: #212121;
     color: #F5F3F5;
     min-height: 500px;
 }
 
-.what-i-do > li {
+.what-i-do > li > a {
     font-size: 1.4rem;
+    color: #F5F3F5;
+    transition: color .5s ease;
+    text-decoration: none;
+}
+
+.what-i-do > li > a:hover {
+    color: #aa0901;
+    cursor: pointer;
+}
+
+.what-i-do-icon-link > i {
+    font-size: 9rem;
+    text-decoration: none;
     color: #F5F3F5;
     transition: color .5s ease;
 }
 
-.what-i-do > li:hover {
+.what-i-do-icon-link > i:hover {
     color: #aa0901;
     cursor: pointer;
 }
@@ -95,7 +140,6 @@ h2 {
 
 .home-section-3-row {
     background-color: #F5F3F5;
-    min-height: 200px;
 }
 
 .home-hero-overlay {
@@ -109,18 +153,9 @@ h2 {
 }
 
 .home-hero-text {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.home-hero-text > h1 {
-    background-color: #302B27;
+    border-radius: 10%;
+    background-color: #212121;
     opacity: .9;
-    display: none;
 }
 
 .button-dark-bg {
@@ -141,13 +176,15 @@ h2 {
     padding: 10px 35px;
 }
 
-#home-what-i-do-box-1,
-#home-what-i-do-box-2,
-#home-what-i-do-box-3 {
-    display: none;
-}
-
 .home-section-3-lower-row {
     background-color: #F5F3F5;
+    min-height: 200px;
+}
+
+.recent-article-box-wrapper {
+    border-left: 5px solid #343a40;
+    border-right: 5px solid #343a40;
+    color: #F5F3F5;
+    border-top: none;
     min-height: 200px;
 }
