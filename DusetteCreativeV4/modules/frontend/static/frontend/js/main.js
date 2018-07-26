@@ -14,7 +14,7 @@ function pageLoading() {
 
 
 function dusetteLoader() {
-    dusetteLoader = setTimeout(showPage, 3000);
+    dusetteLoader = setTimeout(showPage, 1);
 }
 
 function showPage() {
@@ -68,11 +68,73 @@ $(document).ready(function () {
 });
 
 $(window).scroll(function () {
-    if ($(window).scrollTop() <= 900) {
+    if ($(window).scrollTop() > 250) {
         $('#home-what-i-do-box-1').fadeIn("slow", function () {
             $('#home-what-i-do-box-2').fadeIn("slow", function () {
                 $('#home-what-i-do-box-3').fadeIn("slow");
             });
         });
     }
+});
+
+
+
+// Section 3 effects
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 800) {
+        $(".home-section-3-border").addClass(" home-section-3-border-in-view", function () {
+
+        });
+    }
+});
+
+    function doMath() {
+        let speed = Math.floor(Math.random().toFixed(2)*20+1);
+        let delay = Math.floor(Math.random().toFixed(2)*20+1);
+        let position = Math.floor(Math.random().toFixed(5)*2002+1);
+
+        return [speed, delay, position];
+    }
+
+
+$(document).ready(function() {
+    const iconArray = [
+        "fas fa-compass",
+        "fas fa-collapse",
+        "fas fa-lightbulb",
+        "fas fa-location-arrow",
+        "fas fa-lock",
+        "fas fa-magic",
+        "fas fa-share",
+        "fas fa-star-half-full",
+        "fas fa-subscript",
+        "fas fa-suitcase",
+        "fas fa-sun",
+        "fas fa-superscript",
+        "fas fa-tablet",
+        "fas fa-tag",
+        "fas fa-tags",
+        "fas fa-dollar",
+        "fas fa-ambulance",
+        "fas fa-h-sign",
+        "fas fa-hospital",
+        "fas fa-medkit",
+        "fas fa-plus-sign-alt",
+        "fas fa-stethoscope",
+        "fas fa-user-md"];
+
+
+    $.each(iconArray, function (i, val) {
+
+        let vals = doMath();
+        let speed = vals[0];
+        let delay = vals[1];
+        let position = vals[2];
+        console.log(speed, delay, position);
+
+        $(".home-section-3-border").append("<i class='" + val + "' id='icon-" + i + "'></i>");
+
+        $("#icon-" + i).css({"position": "absolute", "width": "60px", "animation-delay": delay + "s", "animation-speed": speed + "s", "left": position + "px"});
+    });
 });
