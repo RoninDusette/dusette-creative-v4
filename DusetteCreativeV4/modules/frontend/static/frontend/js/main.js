@@ -14,7 +14,7 @@ function pageLoading() {
 
 
 function dusetteLoader() {
-    dusetteLoader = setTimeout(showPage, 1);
+    dusetteLoader = setTimeout(showPage, 2000);
 }
 
 function showPage() {
@@ -83,16 +83,14 @@ $(window).scroll(function () {
 
 $(window).scroll(function () {
     if ($(window).scrollTop() > 800) {
-        $(".home-section-3-border").addClass(" home-section-3-border-in-view", function () {
-
-        });
+        $(".home-section-3-border").addClass(" home-section-3-border-in-view");
     }
 });
 
     function doMath() {
-        let speed = Math.floor(Math.random().toFixed(2)*15+1);
+        let speed = Math.floor(Math.random().toFixed(2)*20+10);
         let delay = Math.floor(Math.random().toFixed(2)*20+1);
-        let position = Math.floor(Math.random().toFixed(3)*2002+1);
+        let position = Math.floor(Math.random().toFixed(3)*100+1);
         let size = Math.floor(Math.random().toFixed(1)*10+1);
         let sizePartial = Math.floor(Math.random().toFixed(1)*10+1);
 
@@ -117,30 +115,28 @@ $(document).ready(function() {
         "fas fa-camera",
         "fas fa-download",
         "fas fa-location-arrow",
-        "fas fa-html5",
-        "fas fa-css3",
+        "fab fa-html5",
+        "fab fa-css3",
         "fas fa-share",
         "fas fa-commenting",
-        "fas fa-maxcdn",
+        "fab fa-maxcdn",
         "fas fa-rocket",
-        "fas fa-500px",
-        "fas fa-firefox",
+        "fab fa-500px",
+        "fab fa-firefox",
         "fas fa-tablet",
-        "fas fa-chrome",
+        "fab fa-chrome",
         "fas fa-tags",
         "fas fa-chain-broken",
-        "fas fa-wikipedia-w",
+        "fab fa-wikipedia-w",
         "fas fa-code",
         "fas fa-terminal",
         "fas fa-location-arrow",
         "fas fa-reply-all",
         "fas fa-hand-spock-o",
-        "fas fa-user-md",
         "fas fa-gamepad",
-        "fas fa-folder-0",
-        "fas fa-folder-open-o",
-        "fas fa-github-alt",
-        "fas fa-hand-rock-o",
+        "fa fa-folder-0",
+        "fab fa-github-alt",
+        "fa fa-hand-grab-o",
         "fas fa-desktop",
         "fas fa-laptop",
         "fas fa-tablet",
@@ -149,20 +145,74 @@ $(document).ready(function() {
         "fas fa-battery-half",
         "fas fa-fighter-jet",
         "fas fa-server",
-        "fas fa-cutlery",
-        "fas fa-cloud-download",
-        "fas fa-cloud-upload",
-        "fas fa-exchange",
-        "fas fa-google-plus-square",
-        "fas fa-tachometer",
-        "fas fa-tachometer",
-        "fas fa-tachometer",
-        "fas fa-tachometer",
-        "fas fa-tachometer",
-        "fas fa-tachometer",
-        "fas fa-tachometer",
-        "fas fa-tachometer",
-
+        "fab fa-google-plus-square",
+        "fas fa-cloud",
+        "fas fa-link",
+        "fab fa-github-o",
+        "fas fa-hdd-o",
+        "fas fa-sliders",
+        "fab fa-facebook",
+        "fab fa-codepen",
+        "fas fa-camera-retro",
+        "fab fa-jsfiddle",
+        "fab fa-rebel",
+        "fab fa-empire",
+        "fab fa-steam",
+        "fab fa-soundcloud",
+        "fab fa-pied-piper",
+        "fab fa-slack",
+        "fa fa-video-camera",
+        "fas fa-music",
+        "fas fa-camera",
+        "fas fa-download",
+        "fas fa-location-arrow",
+        "fab fa-html5",
+        "fab fa-css3",
+        "fas fa-share",
+        "fas fa-commenting",
+        "fab fa-maxcdn",
+        "fas fa-rocket",
+        "fab fa-500px",
+        "fab fa-firefox",
+        "fas fa-tablet",
+        "fab fa-chrome",
+        "fas fa-tags",
+        "fas fa-chain-broken",
+        "fab fa-wikipedia-w",
+        "fas fa-code",
+        "fas fa-terminal",
+        "fas fa-location-arrow",
+        "fas fa-reply-all",
+        "fas fa-hand-spock-o",
+        "fas fa-gamepad",
+        "fa fa-folder-0",
+        "fab fa-github-alt",
+        "fa fa-hand-grab-o",
+        "fas fa-desktop",
+        "fas fa-laptop",
+        "fas fa-tablet",
+        "fas fa-mobile",
+        "fas fa-mouse-pointer",
+        "fas fa-battery-half",
+        "fas fa-fighter-jet",
+        "fas fa-server",
+        "fab fa-google-plus-square",
+        "fas fa-cloud",
+        "fas fa-link",
+        "fab fa-github-o",
+        "fas fa-hdd-o",
+        "fas fa-sliders",
+        "fab fa-facebook",
+        "fab fa-codepen",
+        "fas fa-camera-retro",
+        "fab fa-jsfiddle",
+        "fab fa-rebel",
+        "fab fa-empire",
+        "fab fa-steam",
+        "fab fa-soundcloud",
+        "fab fa-pied-piper",
+        "fab fa-slack",
+        "fa fa-video-camera",
     ];
 
     let shuffledIconArray = shuffleArray(iconArray);
@@ -184,7 +234,7 @@ $(document).ready(function() {
             "font-size": size + "." + sizePartial + "rem",
             "animation-delay": delay + "s",
             "animation-duration": speed + "s",
-            "left": position + "px",
+            "left": position + "rem",
         });
     });
 });
