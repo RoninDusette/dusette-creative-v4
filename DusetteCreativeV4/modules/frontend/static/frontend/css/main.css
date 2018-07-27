@@ -348,7 +348,7 @@ h2 {
 .home-section-3-border {
     border: none;
     min-height: 0;
-    transition: border 2.5s ease, min-height 4s ease;
+    transition: border 2.5s ease, min-height 3.5s ease;
 }
 
 .home-section-3-border-in-view {
@@ -360,14 +360,16 @@ h2 {
 
 .home-section-3-border-in-view > * {
     white-space: nowrap;
-    animation: floatText 2s infinite alternate ease-in-out;
+    animation: falling-icons linear infinite;
     z-index: 500;
     color: #F5F3F5;
+    opacity: .3;
+    top: -15rem;
 }
 
-@keyframes floatText {
+@keyframes falling-icons {
     0% {
-        top: -100px;
+        top: -5rem;
     }
     100% {
         top: 150%;

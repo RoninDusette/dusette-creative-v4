@@ -90,51 +90,101 @@ $(window).scroll(function () {
 });
 
     function doMath() {
-        let speed = Math.floor(Math.random().toFixed(2)*20+1);
+        let speed = Math.floor(Math.random().toFixed(2)*15+1);
         let delay = Math.floor(Math.random().toFixed(2)*20+1);
-        let position = Math.floor(Math.random().toFixed(5)*2002+1);
+        let position = Math.floor(Math.random().toFixed(3)*2002+1);
+        let size = Math.floor(Math.random().toFixed(1)*10+1);
+        let sizePartial = Math.floor(Math.random().toFixed(1)*10+1);
 
-        return [speed, delay, position];
+        return [speed, delay, position, size, sizePartial];
     }
 
+    function shuffleArray(array) {
+    for (var i = array.length - 1; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+
+    }
+
+    return array;
+}
 
 $(document).ready(function() {
     const iconArray = [
-        "fas fa-compass",
-        "fas fa-collapse",
-        "fas fa-lightbulb",
+        "fas fa-music",
+        "fas fa-camera",
+        "fas fa-download",
         "fas fa-location-arrow",
-        "fas fa-lock",
-        "fas fa-magic",
+        "fas fa-html5",
+        "fas fa-css3",
         "fas fa-share",
-        "fas fa-star-half-full",
-        "fas fa-subscript",
-        "fas fa-suitcase",
-        "fas fa-sun",
-        "fas fa-superscript",
+        "fas fa-commenting",
+        "fas fa-maxcdn",
+        "fas fa-rocket",
+        "fas fa-500px",
+        "fas fa-firefox",
         "fas fa-tablet",
-        "fas fa-tag",
+        "fas fa-chrome",
         "fas fa-tags",
-        "fas fa-dollar",
-        "fas fa-ambulance",
-        "fas fa-h-sign",
-        "fas fa-hospital",
-        "fas fa-medkit",
-        "fas fa-plus-sign-alt",
-        "fas fa-stethoscope",
-        "fas fa-user-md"];
+        "fas fa-chain-broken",
+        "fas fa-wikipedia-w",
+        "fas fa-code",
+        "fas fa-terminal",
+        "fas fa-location-arrow",
+        "fas fa-reply-all",
+        "fas fa-hand-spock-o",
+        "fas fa-user-md",
+        "fas fa-gamepad",
+        "fas fa-folder-0",
+        "fas fa-folder-open-o",
+        "fas fa-github-alt",
+        "fas fa-hand-rock-o",
+        "fas fa-desktop",
+        "fas fa-laptop",
+        "fas fa-tablet",
+        "fas fa-mobile",
+        "fas fa-mouse-pointer",
+        "fas fa-battery-half",
+        "fas fa-fighter-jet",
+        "fas fa-server",
+        "fas fa-cutlery",
+        "fas fa-cloud-download",
+        "fas fa-cloud-upload",
+        "fas fa-exchange",
+        "fas fa-google-plus-square",
+        "fas fa-tachometer",
+        "fas fa-tachometer",
+        "fas fa-tachometer",
+        "fas fa-tachometer",
+        "fas fa-tachometer",
+        "fas fa-tachometer",
+        "fas fa-tachometer",
+        "fas fa-tachometer",
 
+    ];
 
-    $.each(iconArray, function (i, val) {
+    let shuffledIconArray = shuffleArray(iconArray);
+
+    $.each(shuffledIconArray, function (i, val) {
 
         let vals = doMath();
+
         let speed = vals[0];
         let delay = vals[1];
         let position = vals[2];
-        console.log(speed, delay, position);
+        let size = vals[3];
+        let sizePartial = vals[4];
 
         $(".home-section-3-border").append("<i class='" + val + "' id='icon-" + i + "'></i>");
 
-        $("#icon-" + i).css({"position": "absolute", "width": "60px", "animation-delay": delay + "s", "animation-speed": speed + "s", "left": position + "px"});
+        $("#icon-" + i).css({
+            "position": "absolute",
+            "font-size": size + "." + sizePartial + "rem",
+            "animation-delay": delay + "s",
+            "animation-duration": speed + "s",
+            "left": position + "px",
+        });
     });
 });
