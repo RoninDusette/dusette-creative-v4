@@ -28,7 +28,7 @@ h2 {
 
 #loader-wrapper {
     display: block;
-    transition: display .5s ease;
+    transition: display .8s ease;
     overflow: hidden;
 }
 
@@ -69,11 +69,13 @@ h2 {
     position: relative;
     width: 5%;
     height: auto;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    display: none;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
 }
 
 #loader-text {
+    display: none;
     margin-top: -60px;
     position: relative;
     color: #F5F3F5;
@@ -115,12 +117,16 @@ h2 {
 }
 
 @keyframes spin {
+
     0% {
         transform: rotate(0deg) scale(1);
     }
+
+
     50% {
         transform: rotate(180deg) scale(1.5);
     }
+
     100% {
         transform: rotate(360deg) scale(1);
     }

@@ -1,12 +1,16 @@
 // Things to hide on initial page load (before content is rendered)
 
 $("#loader-wrapper").hide();
+$("#loader-text").hide();
+$(".loader-img").hide();
 $(".navbar, .navbar-underlay").hide();
 
 
 // Page loader animation
 
 function pageLoading() {
+    $(".loader-img").fadeIn(100);
+    $("#loader-text").fadeIn(200);
     $("#loader-wrapper").fadeIn("slow", function () {
         dusetteLoader();
     })
