@@ -13,14 +13,10 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-from django.contrib import admin
-from django.urls import include, path
-from django.conf import settings
-from django.conf.urls.static import static
+from django.urls import path
+from .views import ContactView
+
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('DusetteCreativeV4.modules.frontend.urls')),
-    path('', include('DusetteCreativeV4.modules.articles.urls')),
-    path('', include('DusetteCreativeV4.modules.wattup.urls')),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('contact/', ContactView.as_view(), name='contact'),
+]

@@ -21,6 +21,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'DusetteCreativeV4.modules.frontend',
     'DusetteCreativeV4.modules.articles',
+    'DusetteCreativeV4.modules.wattup',
 ]
 
 MIDDLEWARE = [
