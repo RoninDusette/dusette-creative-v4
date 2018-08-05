@@ -22,6 +22,7 @@ class Contact(models.Model):
     class Meta:
         verbose_name = 'contact'
         verbose_name_plural = 'contacts'
+        ordering = ['date']
 
     def __str__(self):
         return self.name

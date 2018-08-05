@@ -19,9 +19,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ckeditor',
     'DusetteCreativeV4.modules.frontend',
     'DusetteCreativeV4.modules.articles',
     'DusetteCreativeV4.modules.wattup',
+    'DusetteCreativeV4.modules.webcopy',
 ]
 
 MIDDLEWARE = [
