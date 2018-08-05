@@ -13,7 +13,7 @@ class Contact(models.Model):
     )
 
     name = models.CharField(name='Name', max_length=100)
-    phone = models.PositiveIntegerField(name="Phone", max_length=10, blank=True)
+    phone = models.PositiveIntegerField(name="Phone", blank=True)
     email = models.EmailField(name='Email', max_length=100, )
     service = models.CharField(name='Service', choices=INTEREST_CHOICES, max_length=50, blank=True)
     date = models.DateTimeField(auto_now_add=True, )
