@@ -20,6 +20,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'DusetteCreativeV4.modules.frontend',
+    'DusetteCreativeV4.modules.articles',
 ]
 
 MIDDLEWARE = [
