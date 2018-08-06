@@ -18,6 +18,6 @@ from .views import ArticleListFullView, ArticleDetailView
 
 
 urlpatterns = [
-    path('articles/', ArticleListFullView.as_view(), name='article-list-full'),
-    path('articles/detail/', ArticleDetailView.as_view(), name='article-detail'),
+    path('', ArticleListFullView.as_view(), name='article-list-full'),
+    path('detail/', ArticleDetailView.as_view(), name='article-detail'),
 ]

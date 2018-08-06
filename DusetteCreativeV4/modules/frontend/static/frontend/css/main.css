@@ -21,38 +21,49 @@ h2 {
     font-weight: bolder;
 }
 
+body {
+    background: black;
+}
+
 #site-content {
-    display: none;
-    transition: display .5s ease;
 }
 
 #loader-wrapper {
-    display: block;
-    transition: display .8s ease;
     overflow: hidden;
-}
-
-.loader-background {
     position: absolute;
-    background: url("../img/background-textures/grey-background-texture.jpg") no-repeat center center;
+    display: none;
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    z-index: 1;
+    bottom: 0;
+    right: 0;
+    z-index: 99999;
+    background: url("../img/background-textures/grey-background-texture.jpg") no-repeat center center rgba(0, 0, 0, 1);
+    background-size: cover;
+    transition: display .8s ease;
+    animation: loader-slide-away 4s ease-out 2.5s forwards 1;
 }
 
-.loader-background::after {
+@keyframes loader-slide-away {
+
+    0% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: 500%;
+    }
+}
+
+#loader-wrapper::before {
     position: absolute;
+    background-color: rgba(0, 0, 0, .8);
     content: '';
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
-    z-index: 5;
-    background-color: black;
-    opacity: .8;
+    bottom: 0;
+    right: 0;
 }
+
 
 .loader-img-wrapper {
     position: relative;
@@ -69,13 +80,11 @@ h2 {
     position: relative;
     width: 5%;
     height: auto;
-    display: none;
     -webkit-animation: spin 1.5s linear infinite;
     animation: spin 1.5s linear infinite;
 }
 
 #loader-text {
-    display: none;
     margin-top: -60px;
     position: relative;
     color: #F5F3F5;
@@ -232,7 +241,7 @@ h2 {
     background: url("../img/hero-images/dusette-creative-home-background.png") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
-    position: relative;
+    position: fixed;
 }
 
 .navbar-underlay {
@@ -434,4 +443,8 @@ h2 {
     100% {
         opacity: 1;
     }
+}
+
+.lets-create-cta {
+
 }

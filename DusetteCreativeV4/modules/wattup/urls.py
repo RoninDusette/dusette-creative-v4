@@ -18,5 +18,5 @@ from .views import ContactView
 
 
 urlpatterns = [
-    path('contact/', ContactView.as_view(), name='contact'),
+    path('', ContactView.as_view(), name='contact'),
 ]

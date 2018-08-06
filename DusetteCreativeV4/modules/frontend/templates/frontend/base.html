@@ -3,9 +3,9 @@
 
 {% include 'frontend/base_header.html'%}
 
-<body onload="pageLoading()">
-  {% include 'frontend/loader.html' %}
-  <div id="site-content">
+<body {% if request.path == '/' %}onload="pageLoading()"{% else %}onload="showPage()"{% endif %}>
+{% include 'frontend/loader.html' %}
+<div id="site-content">
       <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->

@@ -21,6 +21,6 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('DusetteCreativeV4.modules.frontend.urls')),
-    path('', include('DusetteCreativeV4.modules.articles.urls')),
-    path('', include('DusetteCreativeV4.modules.wattup.urls')),
+    path('articles/', include('DusetteCreativeV4.modules.articles.urls')),
+    path('contact/', include('DusetteCreativeV4.modules.wattup.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
