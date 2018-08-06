@@ -1,0 +1,19 @@
+{
+  "name": "dusettecreativev4",
+  "version": "1.0.0",
+  "description": "DCv4 homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://RoninDusette@github.com/RoninDusette/dusette-creative-v4.git"
+  },
+  "author": "Ronin Dusette",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/RoninDusette/dusette-creative-v4/issues"
+  },
+  "homepage": "https://github.com/RoninDusette/dusette-creative-v4#readme"
+}

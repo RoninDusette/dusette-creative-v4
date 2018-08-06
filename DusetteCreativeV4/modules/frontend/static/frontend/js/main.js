@@ -6,8 +6,8 @@ $('#loader-wrapper').hide()
 $('#home-hero-wrapper').hide()
 
 function pageLoading () {
-  $('#loader-wrapper').fadeIn('slow')
-  setTimeout(showPage, 2500)
+  $('#loader-wrapper').fadeIn('slow');
+  setTimeout(showPage, 2500);
 }
 
 function showPage () {

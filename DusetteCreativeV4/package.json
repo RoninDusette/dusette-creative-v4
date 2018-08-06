@@ -1,0 +1,44 @@
+{
+  "name": "dusettecreativev4",
+  "version": "1.0.0",
+  "description": "DCv4 homepage",
+  "main": "index.js",
+  "scripts": {
+    "watch": "webpack --mode development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://RoninDusette@github.com/RoninDusette/dusette-creative-v4.git"
+  },
+  "author": "Ronin Dusette",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/RoninDusette/dusette-creative-v4/issues"
+  },
+  "homepage": "https://github.com/RoninDusette/dusette-creative-v4#readme",
+  "devDependencies": {
+    "webpack": "latest",
+    "extract-text-webpack-plugin": "latest",
+    "url-loader": "latest",
+    "file-loader": "latest",
+    "resolve-url": "latest",
+    "eslint": "latest",
+    "eslint-loader": "latest",
+    "eslint-plugin-react": "latest",
+    "babel": "latest",
+    "babel-loader": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "jquery": "latest",
+    "bootstrap": "latest",
+    "css-loader": "latest",
+    "style-loader": "latest",
+    "precss": "latest",
+    "postcss-loader": "latest",
+    "autoprefixer": "latest",
+    "node-sass": "latest",
+    "sass-loader": "latest"
+  }
+}

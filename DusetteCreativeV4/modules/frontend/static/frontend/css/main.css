@@ -40,18 +40,6 @@ body {
     background: url("../img/background-textures/grey-background-texture.jpg") no-repeat center center rgba(0, 0, 0, 1);
     background-size: cover;
     transition: display .8s ease;
-    animation: loader-slide-away 4s ease-out 2.5s forwards 1;
-}
-
-@keyframes loader-slide-away {
-
-    0% {
-        bottom: 0;
-    }
-
-    100% {
-        bottom: 500%;
-    }
 }
 
 #loader-wrapper::before {
@@ -241,7 +229,7 @@ body {
     background: url("../img/hero-images/dusette-creative-home-background.png") no-repeat center center;
     -webkit-background-size: cover;
     background-size: cover;
-    position: fixed;
+    position: relative;
 }
 
 .navbar-underlay {
