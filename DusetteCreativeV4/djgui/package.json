@@ -4,7 +4,7 @@
   "description": "DCv4 homepage",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --mode development --watch"
+    "watch": "webpack --mode production --watch"
   },
   "repository": {
     "type": "git",
@@ -24,7 +24,7 @@
     "babel-preset-env": "latest",
     "babel-preset-es2015": "latest",
     "babel-preset-react": "latest",
-    "bootstrap": "latest",
+    "bootstrap": "^4.1.3",
     "css-loader": "latest",
     "cssnano": "latest",
     "eslint": "latest",
@@ -34,9 +34,10 @@
     "jquery": "latest",
     "mini-css-extract-plugin": "latest",
     "node-sass": "latest",
-    "popper.js": "latest",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "popper.js": "^1.14.4",
     "postcss-loader": "latest",
-    "precss": "latest",
+    "precss": "^3.1.2",
     "react": "latest",
     "react-dom": "latest",
     "react-redux": "latest",
@@ -44,6 +45,7 @@
     "resolve-url": "latest",
     "sass-loader": "latest",
     "style-loader": "latest",
+    "uglifyjs-webpack-plugin": "^1.2.7",
     "url-loader": "latest",
     "webpack": "latest",
     "webpack-cli": "latest"

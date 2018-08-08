@@ -1,6 +1,9 @@
 const path = require('path')
 const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const AutoPrefixer = require('autoprefixer')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const devMode = process.env.NODE_ENV !== 'production'
 
 const paths = {
@@ -20,16 +23,16 @@ const config = {
   resolve: {
     extensions: ['/node_modules/', '.js', '.jsx', '.scss', '.css']
   },
-  devtool: 'source-map',
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: devMode ? 'style.bundle.css' : 'style.[hash].bundle.css'
-    }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
-  ],
+  optimization: {
+    minimizer: [
+      new UglifyJsPlugin({
+        cache: true,
+        parallel: true,
+        sourceMap: true // set to true if you want JS source maps
+      }),
+      new OptimizeCSSAssetsPlugin({})
+    ]
+  },
   module: {
     rules: [
       {
@@ -51,7 +54,11 @@ const config = {
             options: {
               ident: 'postcss',
               plugins: [
-                require('autoprefixer')
+                AutoPrefixer({
+                  browsers: [
+                    'last 3 versions'
+                  ]
+                })
               ]
             }
           },
@@ -62,9 +69,33 @@ const config = {
             }
           }
         ]
+      },
+      {
+        test: /\.(woff|woff2|ttf|otf|eot|ttc)$/,
+        loader: 'url-loader!file-loader',
+        options: {
+          name: '[name].[ext]',
+          outputPath: 'fonts/'
+        }
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|bmp|ico|svg)$/,
+        loader: 'url-loader!file-loader',
+        options: 'img/'
       }
     ]
-  }
+  },
+  devtool: 'source-map',
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'style.[hash].bundle.css',
+      chunkFilename: 'style.[id].[hash].css'
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
+  ],
 }
 
 module.exports = config;
