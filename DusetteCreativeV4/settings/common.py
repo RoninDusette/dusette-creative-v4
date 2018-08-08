@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'webpack_loader',
     'ckeditor',
     'DusetteCreativeV4.modules.frontend',
     'DusetteCreativeV4.modules.articles',

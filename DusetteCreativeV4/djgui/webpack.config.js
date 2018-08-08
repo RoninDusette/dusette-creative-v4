@@ -4,7 +4,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const AutoPrefixer = require('autoprefixer')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const devMode = process.env.NODE_ENV !== 'production'
 
 const paths = {
   DIST: path.resolve(__dirname, 'dist'),
@@ -88,8 +87,7 @@ const config = {
   devtool: 'source-map',
   plugins: [
     new MiniCssExtractPlugin({
-      filename: 'style.[hash].bundle.css',
-      chunkFilename: 'style.[id].[hash].css'
+      filename: 'style.bundle.css',
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
