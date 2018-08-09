@@ -1,0 +1,89 @@
+$main-font: "Julius Sans One", sans-serif;
+$secondary-font: "Cambay", sans-serif;
+
+$size-xsmall: .50rem;
+$size-small: .75rem;
+$size-regular: 1rem;
+$size-large: 1.5rem;
+$size-xlarge: 2rem;
+$size-xxlarge: 3rem;
+
+
+h1, h2, h3, h4, li, li > a, a {
+  font-family: $main-font;
+}
+
+h5, h6, p {
+  font-family: $secondary-font;
+}
+
+
+h1 {
+  font-size: $size-xxlarge;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: $size-xlarge;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: $size-large;
+}
+
+h4 {
+  font-size: $size-regular;
+}
+
+h5 {
+  font-size: $size-small;
+}
+
+h6 {
+  font-size: $size-xsmall;
+}
+
+li > a, a {
+  font-size: $size-regular;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color .5s ease;
+}
+
+li > a:hover, a:hover {
+  text-decoration: none;
+}
+
+.link-light {
+  color: $white;
+  &:hover {
+    color: $red;
+  }
+}
+
+.link-dark {
+  color: $dark-brown;
+  &:hover {
+    color: $red;
+  }
+}
+
+.nav-link {
+  font-size: $size-large;
+  font-weight: 600;
+  color: $white;
+  &:hover {
+    color: $red;
+    text-shadow: 1px -1px black;
+  }
+}
+
+.what-i-do > li > a {
+  font-size: $size-large;
+  color: $white;
+  &:hover {
+    color: $red;
+  }
+}
+

@@ -8,10 +8,10 @@ const BundleTracker = require('webpack-bundle-tracker')
 const CopyWebpackPlugin =require('copy-webpack-plugin')
 
 const paths = {
-  DIST: path.resolve(__dirname, 'dist / DCv4'),
+  DIST: path.resolve(__dirname, 'dist/DCv4'),
   BUILD: path.resolve(__dirname, 'build'),
   SRC: path.resolve(__dirname, 'src'),
-  JS: path.resolve(__dirname, 'src / js'),
+  JS: path.resolve(__dirname, 'src/js'),
   PUBLIC: path.resolve(__dirname, 'public'),
 }
 

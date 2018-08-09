@@ -41377,13 +41377,12 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
       'nav',
       { className: 'navbar fixed-top navbar-expand-lg navbar-light bg-transparent' },
       _react2.default.createElement(
-        'a',
-        { className: 'navbar-brand mx-auto', href: '/' },
+        _reactRouterDom.Link,
+        { className: 'navbar-brand mx-auto', to: { pathname: '/' } },
         _react2.default.createElement(
           'span',
           { className: 'nav-link' },
-          _react2.default.createElement('img', { className: 'nav-brand-image d-inline-block mr-1',
-            src: '/static/DCv4/img/icons/logo-plain.png', alt: '' }),
+          _react2.default.createElement('img', { className: 'nav-brand-image d-inline-block mr-1', src: '/static/DCv4/img/icons/logo-plain.png', alt: '' }),
           'Dusette Creative'
         )
       ),
@@ -41403,8 +41402,8 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             'li',
             { className: 'nav-item' },
             _react2.default.createElement(
-              'a',
-              { className: 'nav-link', href: '#' },
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/art' } },
               'ART'
             )
           ),
@@ -41421,8 +41420,8 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             'li',
             { className: 'nav-item' },
             _react2.default.createElement(
-              'a',
-              { className: 'nav-link', href: '#' },
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/dev' } },
               'DEV'
             )
           ),
@@ -41439,8 +41438,8 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             'li',
             { className: 'nav-item' },
             _react2.default.createElement(
-              'a',
-              { className: 'nav-link', href: '#' },
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/txt' } },
               'TXT'
             )
           ),
@@ -41475,8 +41474,8 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             'li',
             { className: 'nav-item' },
             _react2.default.createElement(
-              'a',
-              { className: 'nav-link', href: '#' },
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/buy' } },
               'BUY'
             )
           ),
@@ -41493,8 +41492,8 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             'li',
             { className: 'nav-item' },
             _react2.default.createElement(
-              'a',
-              { className: 'nav-link', href: '#' },
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/hey' } },
               'HEY'
             )
           )
@@ -41704,7 +41703,7 @@ var HomeContent = exports.HomeContent = function HomeContent() {
                     { className: "col-12 text-center" },
                     _react2.default.createElement(
                         "a",
-                        { className: "button-dark-bg lets-create-cta", href: "/contact/" },
+                        { className: "button button-expands button-dark-bg lets-create-cta", href: "/contact/" },
                         "Let's Create"
                     )
                 )

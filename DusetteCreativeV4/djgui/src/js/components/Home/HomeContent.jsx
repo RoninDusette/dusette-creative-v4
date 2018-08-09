@@ -54,7 +54,7 @@ export const HomeContent = () => (
         <br/>
         <div className={"row mt-5 mb-3"}>
             <div className={"col-12 text-center"}>
-                <a className={"button-dark-bg lets-create-cta"} href="/contact/">Let's Create</a>
+                <a className={"button button-expands button-dark-bg lets-create-cta"} href="/contact/">Let's Create</a>
             </div>
         </div>
     </div>
