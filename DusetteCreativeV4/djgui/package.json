@@ -32,6 +32,7 @@
     "eslint": "latest",
     "eslint-loader": "latest",
     "eslint-plugin-react": "latest",
+    "expose-loader": "^0.7.5",
     "file-loader": "latest",
     "jquery": "latest",
     "mini-css-extract-plugin": "latest",

@@ -2,5 +2,5 @@
 @import url("https://fonts.googleapis.com/css?family=Cambay");
 @import url("http://djea2nr17ey16.cloudfront.net/wp-content/themes/astronaut-2014/css/font-awesome-4.7.0.css");
 @import url("https://use.fontawesome.com/releases/v5.1.1/css/all.css");
-@import "~bootstrap/scss/bootstrap.scss";
+@import "~bootstrap/dist/css/bootstrap.css";
 @import "./oldStyles/oldStyles.css";

@@ -37,7 +37,7 @@ body {
   bottom: 0;
   right: 0;
   z-index: 99999;
-  /*background: url("../img/background-textures/grey-background-texture.jpg") no-repeat center center rgba(0, 0, 0, 1);*/
+  background: url("/static/frontend/img/background-textures/grey-background-texture.jpg") no-repeat center center rgba(0, 0, 0, 1);
   background-size: cover;
   transition: display .8s ease;
 }
@@ -224,7 +224,7 @@ body {
 .home-hero-wrapper {
   height: 100vh;
   width: 100vw;
-  /*background: url("../img/hero-images/dusette-creative-home-background.png") no-repeat center center;*/
+  background: url("/static/frontend/img/hero-images/dusette-creative-home-background.png") no-repeat center center;
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
@@ -324,7 +324,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  /*background: url("../img/background-textures/grey-background-texture.jpg") no-repeat center center;*/
+  background: url("/static/frontend/img/background-textures/grey-background-texture.jpg") no-repeat center center;
   background-size: cover;
   opacity: .1;
 }
@@ -335,7 +335,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  /*background: url("../img/background-textures/grey-background-texture.jpg") no-repeat center center;*/
+  background: url("/static/frontend/img/background-textures/grey-background-texture.jpg") no-repeat center center;
   background-size: cover;
   opacity: .1;
   transform: rotateZ(180deg) rotateY(180deg);

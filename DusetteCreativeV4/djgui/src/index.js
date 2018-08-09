@@ -2,10 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './styles/styles.css';
-import 'jquery';
+import Main from './js/Main';
 import 'popper.js';
 import 'bootstrap';
-import Main from './js/Main';
+import './js/utils/Effects';
 
 
 ReactDOM.render((

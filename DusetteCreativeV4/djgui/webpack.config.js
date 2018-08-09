@@ -1,4 +1,5 @@
 const path = require('path')
+const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const AutoPrefixer = require('autoprefixer')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
@@ -71,17 +72,12 @@ const config = {
       },
       {
         test: /\.(woff|woff2|ttf|otf|eot|ttc)$/,
-        loader: 'url-loader!file-loader',
-        options: {
-          name: '[name].[ext]',
-          outputPath: 'fonts/'
-        }
+        loader: 'url-loader'
       },
       {
         test: /\.(jpg|jpeg|png|gif|bmp|ico|svg)$/,
-        loader: 'url-loader!file-loader',
-        options: 'img/'
-      }
+        loader: 'url-loader'
+      },
     ]
   },
   devtool: 'source-map',
@@ -89,7 +85,12 @@ const config = {
     new MiniCssExtractPlugin({
       filename: 'style.bundle.css',
     }),
-    new BundleTracker({filename: './webpack-stats.json'})
+    new BundleTracker({filename: './webpack-stats.json'}),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
   ],
 }
 
