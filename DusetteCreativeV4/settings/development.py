@@ -26,17 +26,17 @@ EMAIL_BACKEND = 'django.core.mail.backends.dummy.EmailBackend'
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'STATIC_TEMP')
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'djgui'),
-)
-
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'MEDIA_TEMP')
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, 'djgui/dist/'),
+)
 
 WEBPACK_LOADER = {
     'DEFAULT': {
         'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'dist/',  # must end with slash
+        'BUNDLE_DIR_NAME': 'DCv4/',  # must end with slash
         'STATS_FILE': os.path.join(BASE_DIR, 'djgui/webpack-stats.json'),
         'POLL_INTERVAL': 0.1,
         'TIMEOUT': None,

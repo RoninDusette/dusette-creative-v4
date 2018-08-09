@@ -5,9 +5,10 @@ const AutoPrefixer = require('autoprefixer')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const BundleTracker = require('webpack-bundle-tracker')
+const CopyWebpackPlugin =require('copy-webpack-plugin')
 
 const paths = {
-  DIST: path.resolve(__dirname, 'dist'),
+  DIST: path.resolve(__dirname, 'dist / DCv4'),
   BUILD: path.resolve(__dirname, 'build'),
   SRC: path.resolve(__dirname, 'src'),
   JS: path.resolve(__dirname, 'src / js'),
@@ -18,7 +19,8 @@ const config = {
   entry: path.resolve(paths.SRC, 'index.js'),
   output: {
     path: paths.DIST,
-    filename: 'app.bundle.js'
+    filename: 'app.bundle.js',
+    publicPath: '/static/DCv4/'
   },
   resolve: {
     extensions: ['/node_modules/', '.js', '.jsx', '.scss', '.css']
@@ -90,7 +92,10 @@ const config = {
       $: 'jquery',
       jQuery: 'jquery',
       'window.jQuery': 'jquery'
-    })
+    }),
+    new CopyWebpackPlugin([{
+      from: path.resolve(paths.SRC, 'assets/img'), to: path.resolve(paths.DIST, 'img')
+    }])
   ],
 }
 

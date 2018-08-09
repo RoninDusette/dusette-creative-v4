@@ -27,6 +27,7 @@
     "babel-preset-es2015": "latest",
     "babel-preset-react": "latest",
     "bootstrap": "^4.1.3",
+    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "latest",
     "cssnano": "latest",
     "eslint": "latest",
