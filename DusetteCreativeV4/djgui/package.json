@@ -4,7 +4,7 @@
   "description": "DCv4 homepage",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --mode development --hot --watch",
+    "watch": "webpack --mode development --watch",
     "build-dev": "webpack --mode development",
     "build-prod": "webpack --mode production"
   },
@@ -43,6 +43,8 @@
     "react": "latest",
     "react-dom": "latest",
     "react-redux": "latest",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
     "redux": "latest",
     "resolve-url": "latest",
     "sass-loader": "latest",

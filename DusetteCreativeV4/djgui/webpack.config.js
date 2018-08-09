@@ -1,9 +1,9 @@
 const path = require('path')
-const webpack = require('webpack')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const AutoPrefixer = require('autoprefixer')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const BundleTracker = require('webpack-bundle-tracker')
 
 const paths = {
   DIST: path.resolve(__dirname, 'dist'),
@@ -89,10 +89,7 @@ const config = {
     new MiniCssExtractPlugin({
       filename: 'style.bundle.css',
     }),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery'
-    }),
+    new BundleTracker({filename: './webpack-stats.json'})
   ],
 }
 

@@ -36,7 +36,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'MEDIA_TEMP')
 WEBPACK_LOADER = {
     'DEFAULT': {
         'CACHE': not DEBUG,
-        'BUNDLE_DIR_NAME': 'build/',  # must end with slash
+        'BUNDLE_DIR_NAME': 'dist/',  # must end with slash
         'STATS_FILE': os.path.join(BASE_DIR, 'djgui/webpack-stats.json'),
         'POLL_INTERVAL': 0.1,
         'TIMEOUT': None,
