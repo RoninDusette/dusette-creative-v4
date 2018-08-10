@@ -98,7 +98,7 @@ const config = {
     }),
     new CopyWebpackPlugin([{
       from: path.resolve(paths.SRC, 'assets/img'), to: path.resolve(paths.DIST, 'img')
-    }])
+    }]),
   ],
 }
 

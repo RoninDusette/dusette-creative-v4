@@ -1,7 +1,7 @@
 import React from 'react';
-import { pageLoading } from '../../utils/Effects';
-import { HomeLoader } from '../../components/Home/HomeLoader';
-import { HomeContent } from '../../components/Home/HomeContent';
+import { pageLoading } from '../../Utils/Effects';
+import { HomeLoaderContainer } from '../../Misc/Containers/HomeLoaderContainer';
+import { HomeContent } from '../Components/HomeContent';
 
 
 class HomeContainer extends React.Component {
@@ -16,7 +16,7 @@ class HomeContainer extends React.Component {
   render () {
     return (
       <div>
-        <HomeLoader />
+        <HomeLoaderContainer />
         <HomeContent />
       </div>
     );

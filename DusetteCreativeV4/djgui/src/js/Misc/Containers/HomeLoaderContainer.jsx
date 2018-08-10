@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-export const HomeLoader = () => (
+export const HomeLoaderContainer = () => (
   <div id={"loader-wrapper"}>
     <div className={"loader-img-wrapper text-center"}>
     <img src={"/static/DCv4/img/icons/logo-plain.png"} className={"loader-img"} alt=""/>

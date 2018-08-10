@@ -41232,7 +41232,7 @@ var _Main = __webpack_require__(/*! ./js/Main */ "./src/js/Main.js");
 
 var _Main2 = _interopRequireDefault(_Main);
 
-__webpack_require__(/*! ./js/utils/Effects */ "./src/js/utils/Effects.js");
+__webpack_require__(/*! ./js/Utils/Effects */ "./src/js/Utils/Effects.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41244,10 +41244,10 @@ _reactDom2.default.render(_react2.default.createElement(
 
 /***/ }),
 
-/***/ "./src/js/Main.js":
-/*!************************!*\
-  !*** ./src/js/Main.js ***!
-  \************************/
+/***/ "./src/js/About/Containers/AboutContainer.jsx":
+/*!****************************************************!*\
+  !*** ./src/js/About/Containers/AboutContainer.jsx ***!
+  \****************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41264,10 +41264,6 @@ var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Routes = __webpack_require__(/*! ./Routes */ "./src/js/Routes.jsx");
-
-var _NavBarContainer = __webpack_require__(/*! ./base/NavBar/NavBarContainer */ "./src/js/base/NavBar/NavBarContainer.jsx");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -41276,242 +41272,44 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Main = function (_Component) {
-  _inherits(Main, _Component);
+var AboutContainer = function (_Component) {
+  _inherits(AboutContainer, _Component);
 
-  function Main() {
-    _classCallCheck(this, Main);
+  function AboutContainer() {
+    _classCallCheck(this, AboutContainer);
 
-    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (AboutContainer.__proto__ || Object.getPrototypeOf(AboutContainer)).apply(this, arguments));
   }
 
-  _createClass(Main, [{
-    key: 'render',
+  _createClass(AboutContainer, [{
+    key: "render",
     value: function render() {
       return _react2.default.createElement(
-        'div',
+        "div",
         null,
-        _react2.default.createElement(_NavBarContainer.NavBarContainer, null),
-        _react2.default.createElement(_Routes.Routes, null)
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement("br", null),
+        _react2.default.createElement(
+          "h1",
+          { className: "text-center text-white" },
+          "This is my About container component"
+        )
       );
     }
   }]);
 
-  return Main;
+  return AboutContainer;
 }(_react.Component);
 
-exports.default = Main;
+exports.default = AboutContainer;
 
 /***/ }),
 
-/***/ "./src/js/Routes.jsx":
-/*!***************************!*\
-  !*** ./src/js/Routes.jsx ***!
-  \***************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.Routes = undefined;
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-
-var _HomeContainer = __webpack_require__(/*! ./containers/Home/HomeContainer */ "./src/js/containers/Home/HomeContainer.jsx");
-
-var _HomeContainer2 = _interopRequireDefault(_HomeContainer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var Routes = exports.Routes = function Routes() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(
-      _reactRouterDom.Switch,
-      null,
-      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _HomeContainer2.default })
-    )
-  );
-};
-
-/***/ }),
-
-/***/ "./src/js/base/NavBar/NavBarContainer.jsx":
+/***/ "./src/js/Home/Components/HomeContent.jsx":
 /*!************************************************!*\
-  !*** ./src/js/base/NavBar/NavBarContainer.jsx ***!
-  \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.NavBarContainer = undefined;
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement('div', { className: "fixed-top navbar-underlay" }),
-    _react2.default.createElement(
-      'nav',
-      { className: 'navbar fixed-top navbar-expand-lg navbar-light bg-transparent' },
-      _react2.default.createElement(
-        'div',
-        { className: "navbar-brand" },
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { className: "mx-auto", to: { pathname: '/' } },
-          _react2.default.createElement('img', { className: 'nav-brand-image d-inline-block mr-1', src: '/static/DCv4/img/icons/logo-plain.png', alt: '' })
-        ),
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { className: "nav-link navbar-text", to: { pathname: '/' } },
-          'Dusette Creative'
-        )
-      ),
-      _react2.default.createElement(
-        'button',
-        { className: "navbar-toggler", type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarSupportedContent',
-          'aria-controls': 'navbarSupportedContent', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-        _react2.default.createElement('span', { className: 'navbar-toggler-icon' })
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: "collapse navbar-collapse", id: 'navbarSupportedContent' },
-        _react2.default.createElement(
-          'ul',
-          { className: 'navbar-nav ml-auto' },
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/art' } },
-              'ART'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/dev' } },
-              'DEV'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/txt' } },
-              'TXT'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/about' } },
-              'BIO'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/buy' } },
-              'BUY'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/hey' } },
-              'HEY'
-            )
-          )
-        )
-      )
-    )
-  );
-};
-
-/***/ }),
-
-/***/ "./src/js/components/Home/HomeContent.jsx":
-/*!************************************************!*\
-  !*** ./src/js/components/Home/HomeContent.jsx ***!
+  !*** ./src/js/Home/Components/HomeContent.jsx ***!
   \************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -41745,10 +41543,10 @@ var HomeContent = exports.HomeContent = function HomeContent() {
 
 /***/ }),
 
-/***/ "./src/js/components/Home/HomeLoader.jsx":
-/*!***********************************************!*\
-  !*** ./src/js/components/Home/HomeLoader.jsx ***!
-  \***********************************************/
+/***/ "./src/js/Home/Containers/HomeContainer.jsx":
+/*!**************************************************!*\
+  !*** ./src/js/Home/Containers/HomeContainer.jsx ***!
+  \**************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -41758,7 +41556,134 @@ var HomeContent = exports.HomeContent = function HomeContent() {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.HomeLoader = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Effects = __webpack_require__(/*! ../../Utils/Effects */ "./src/js/Utils/Effects.js");
+
+var _HomeLoaderContainer = __webpack_require__(/*! ../../Misc/Containers/HomeLoaderContainer */ "./src/js/Misc/Containers/HomeLoaderContainer.jsx");
+
+var _HomeContent = __webpack_require__(/*! ../Components/HomeContent */ "./src/js/Home/Components/HomeContent.jsx");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var HomeContainer = function (_React$Component) {
+  _inherits(HomeContainer, _React$Component);
+
+  function HomeContainer(props) {
+    _classCallCheck(this, HomeContainer);
+
+    return _possibleConstructorReturn(this, (HomeContainer.__proto__ || Object.getPrototypeOf(HomeContainer)).call(this, props));
+  }
+
+  _createClass(HomeContainer, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      (0, _Effects.pageLoading)();
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_HomeLoaderContainer.HomeLoaderContainer, null),
+        _react2.default.createElement(_HomeContent.HomeContent, null)
+      );
+    }
+  }]);
+
+  return HomeContainer;
+}(_react2.default.Component);
+
+exports.default = HomeContainer;
+
+/***/ }),
+
+/***/ "./src/js/Main.js":
+/*!************************!*\
+  !*** ./src/js/Main.js ***!
+  \************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Routes = __webpack_require__(/*! ./Utils/Routes */ "./src/js/Utils/Routes.jsx");
+
+var _NavBarContainer = __webpack_require__(/*! ./base/NavBar/NavBarContainer */ "./src/js/base/NavBar/NavBarContainer.jsx");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Main = function (_Component) {
+  _inherits(Main, _Component);
+
+  function Main() {
+    _classCallCheck(this, Main);
+
+    return _possibleConstructorReturn(this, (Main.__proto__ || Object.getPrototypeOf(Main)).apply(this, arguments));
+  }
+
+  _createClass(Main, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(_NavBarContainer.NavBarContainer, null),
+        _react2.default.createElement(_Routes.Routes, null)
+      );
+    }
+  }]);
+
+  return Main;
+}(_react.Component);
+
+exports.default = Main;
+
+/***/ }),
+
+/***/ "./src/js/Misc/Containers/HomeLoaderContainer.jsx":
+/*!********************************************************!*\
+  !*** ./src/js/Misc/Containers/HomeLoaderContainer.jsx ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.HomeLoaderContainer = undefined;
 
 var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
@@ -41766,7 +41691,7 @@ var _react2 = _interopRequireDefault(_react);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var HomeLoader = exports.HomeLoader = function HomeLoader() {
+var HomeLoaderContainer = exports.HomeLoaderContainer = function HomeLoaderContainer() {
   return _react2.default.createElement(
     "div",
     { id: "loader-wrapper" },
@@ -41805,76 +41730,9 @@ var HomeLoader = exports.HomeLoader = function HomeLoader() {
 
 /***/ }),
 
-/***/ "./src/js/containers/Home/HomeContainer.jsx":
-/*!**************************************************!*\
-  !*** ./src/js/containers/Home/HomeContainer.jsx ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Effects = __webpack_require__(/*! ../../utils/Effects */ "./src/js/utils/Effects.js");
-
-var _HomeLoader = __webpack_require__(/*! ../../components/Home/HomeLoader */ "./src/js/components/Home/HomeLoader.jsx");
-
-var _HomeContent = __webpack_require__(/*! ../../components/Home/HomeContent */ "./src/js/components/Home/HomeContent.jsx");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var HomeContainer = function (_React$Component) {
-  _inherits(HomeContainer, _React$Component);
-
-  function HomeContainer(props) {
-    _classCallCheck(this, HomeContainer);
-
-    return _possibleConstructorReturn(this, (HomeContainer.__proto__ || Object.getPrototypeOf(HomeContainer)).call(this, props));
-  }
-
-  _createClass(HomeContainer, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      (0, _Effects.pageLoading)();
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(_HomeLoader.HomeLoader, null),
-        _react2.default.createElement(_HomeContent.HomeContent, null)
-      );
-    }
-  }]);
-
-  return HomeContainer;
-}(_react2.default.Component);
-
-exports.default = HomeContainer;
-
-/***/ }),
-
-/***/ "./src/js/utils/Effects.js":
+/***/ "./src/js/Utils/Effects.js":
 /*!*********************************!*\
-  !*** ./src/js/utils/Effects.js ***!
+  !*** ./src/js/Utils/Effects.js ***!
   \*********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
@@ -42011,6 +41869,216 @@ $(document).ready(function () {
     });
   });
 });
+
+/***/ }),
+
+/***/ "./src/js/Utils/Routes.jsx":
+/*!*********************************!*\
+  !*** ./src/js/Utils/Routes.jsx ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.Routes = undefined;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+var _HomeContainer = __webpack_require__(/*! ../Home/Containers/HomeContainer */ "./src/js/Home/Containers/HomeContainer.jsx");
+
+var _HomeContainer2 = _interopRequireDefault(_HomeContainer);
+
+var _AboutContainer = __webpack_require__(/*! ../About/Containers/AboutContainer */ "./src/js/About/Containers/AboutContainer.jsx");
+
+var _AboutContainer2 = _interopRequireDefault(_AboutContainer);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Routes = exports.Routes = function Routes() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement(
+      _reactRouterDom.Switch,
+      null,
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _HomeContainer2.default }),
+      _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/about', component: _AboutContainer2.default })
+    )
+  );
+};
+
+/***/ }),
+
+/***/ "./src/js/base/NavBar/NavBarContainer.jsx":
+/*!************************************************!*\
+  !*** ./src/js/base/NavBar/NavBarContainer.jsx ***!
+  \************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.NavBarContainer = undefined;
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
+  return _react2.default.createElement(
+    'div',
+    null,
+    _react2.default.createElement('div', { className: "fixed-top navbar-underlay" }),
+    _react2.default.createElement(
+      'nav',
+      { className: 'navbar fixed-top navbar-expand-lg navbar-light bg-transparent' },
+      _react2.default.createElement(
+        'div',
+        { className: "navbar-brand" },
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { className: "mx-auto", to: { pathname: '/' } },
+          _react2.default.createElement('img', { className: 'nav-brand-image d-inline-block mr-1', src: '/static/DCv4/img/icons/logo-plain.png', alt: '' })
+        ),
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { className: "nav-link navbar-text", to: { pathname: '/' } },
+          'Dusette Creative'
+        )
+      ),
+      _react2.default.createElement(
+        'button',
+        { className: "navbar-toggler", type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarSupportedContent',
+          'aria-controls': 'navbarSupportedContent', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
+        _react2.default.createElement('span', { className: 'navbar-toggler-icon' })
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: "collapse navbar-collapse", id: 'navbarSupportedContent' },
+        _react2.default.createElement(
+          'ul',
+          { className: 'navbar-nav ml-auto' },
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/art' } },
+              'ART'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              'em',
+              null,
+              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/dev' } },
+              'DEV'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              'em',
+              null,
+              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/txt' } },
+              'TXT'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              'em',
+              null,
+              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/about' } },
+              'BIO'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              'em',
+              null,
+              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/buy' } },
+              'BUY'
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              'em',
+              null,
+              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
+            )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'nav-item' },
+            _react2.default.createElement(
+              _reactRouterDom.Link,
+              { className: 'nav-link', to: { pathname: '/hey' } },
+              'HEY'
+            )
+          )
+        )
+      )
+    )
+  );
+};
 
 /***/ }),
 

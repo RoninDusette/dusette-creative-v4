@@ -4,7 +4,11 @@ class AboutContainer extends Component {
   render () {
     return (
       <div>
-        <h1 className={"text-center"}>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <h1 className={"text-center text-white"}>
           This is my About container component
         </h1>
       </div>

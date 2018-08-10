@@ -5,7 +5,7 @@ import 'popper.js';
 import 'bootstrap';
 import './styles/styles.css';
 import Main from './js/Main';
-import './js/utils/Effects';
+import './js/Utils/Effects';
 
 
 ReactDOM.render((
