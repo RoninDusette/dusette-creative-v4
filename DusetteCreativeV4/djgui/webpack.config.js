@@ -23,7 +23,10 @@ const config = {
     publicPath: '/static/DCv4/'
   },
   resolve: {
-    extensions: ['/node_modules/', '.js', '.jsx', '.scss', '.css']
+    extensions: ['/node_modules/', '.js', '.jsx', '.scss', '.css'],
+    alias: {
+      Images: path.resolve(paths.SRC, 'assets/img/')
+    }
   },
   optimization: {
     minimizer: [

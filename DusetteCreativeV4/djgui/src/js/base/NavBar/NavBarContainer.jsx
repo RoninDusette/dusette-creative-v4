@@ -2,22 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
-
 export const NavBarContainer = () => (
   <div>
     <div className={"fixed-top navbar-underlay"} />
     <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
-      <Link className="navbar-brand mx-auto" to={{ pathname: '/' }}>
-        <span className="nav-link">
-          <img className="nav-brand-image d-inline-block mr-1" src="/static/DCv4/img/icons/logo-plain.png" alt="" />
+      <div className={"navbar-brand"}>
+        <Link className={"mx-auto"} to={{pathname: '/'}}>
+            <img className="nav-brand-image d-inline-block mr-1" src="/static/DCv4/img/icons/logo-plain.png" alt=""/>
+        </Link>
+        <Link className={"nav-link navbar-text"} to={{pathname: '/'}}>
           Dusette Creative
-        </span>
-      </Link>
+        </Link>
+      </div>
       <button className={"navbar-toggler"} type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"/>
       </button>
-
       <div className={"collapse navbar-collapse"} id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">

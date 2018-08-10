@@ -41222,15 +41222,15 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
+__webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js");
+
+__webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
+
 __webpack_require__(/*! ./styles/styles.css */ "./src/styles/styles.css");
 
 var _Main = __webpack_require__(/*! ./js/Main */ "./src/js/Main.js");
 
 var _Main2 = _interopRequireDefault(_Main);
-
-__webpack_require__(/*! popper.js */ "./node_modules/popper.js/dist/esm/popper.js");
-
-__webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap.js");
 
 __webpack_require__(/*! ./js/utils/Effects */ "./src/js/utils/Effects.js");
 
@@ -41377,12 +41377,16 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
       'nav',
       { className: 'navbar fixed-top navbar-expand-lg navbar-light bg-transparent' },
       _react2.default.createElement(
-        _reactRouterDom.Link,
-        { className: 'navbar-brand mx-auto', to: { pathname: '/' } },
+        'div',
+        { className: "navbar-brand" },
         _react2.default.createElement(
-          'span',
-          { className: 'nav-link' },
-          _react2.default.createElement('img', { className: 'nav-brand-image d-inline-block mr-1', src: '/static/DCv4/img/icons/logo-plain.png', alt: '' }),
+          _reactRouterDom.Link,
+          { className: "mx-auto", to: { pathname: '/' } },
+          _react2.default.createElement('img', { className: 'nav-brand-image d-inline-block mr-1', src: '/static/DCv4/img/icons/logo-plain.png', alt: '' })
+        ),
+        _react2.default.createElement(
+          _reactRouterDom.Link,
+          { className: "nav-link navbar-text", to: { pathname: '/' } },
           'Dusette Creative'
         )
       ),
@@ -41769,31 +41773,31 @@ var HomeLoader = exports.HomeLoader = function HomeLoader() {
     _react2.default.createElement(
       "div",
       { className: "loader-img-wrapper text-center" },
-      _react2.default.createElement("img", { src: "/static/frontend/img/icons/logo-plain.png", className: "loader-img", alt: "" }),
+      _react2.default.createElement("img", { src: "/static/DCv4/img/icons/logo-plain.png", className: "loader-img", alt: "" })
+    ),
+    _react2.default.createElement(
+      "h3",
+      { id: "loader-text" },
       _react2.default.createElement(
-        "h3",
-        { id: "loader-text" },
-        _react2.default.createElement(
-          "span",
-          { id: "loader-text-word" },
-          "Loading"
-        ),
-        _react2.default.createElement(
-          "span",
-          { id: "loader-text-dot-1" },
-          "."
-        ),
-        _react2.default.createElement(
-          "span",
-          {
-            id: "loader-text-dot-2" },
-          "."
-        ),
-        _react2.default.createElement(
-          "span",
-          { id: "loader-text-dot-3" },
-          "."
-        )
+        "span",
+        { id: "loader-text-word" },
+        "Loading"
+      ),
+      _react2.default.createElement(
+        "span",
+        { id: "loader-text-dot-1" },
+        "."
+      ),
+      _react2.default.createElement(
+        "span",
+        {
+          id: "loader-text-dot-2" },
+        "."
+      ),
+      _react2.default.createElement(
+        "span",
+        { id: "loader-text-dot-3" },
+        "."
       )
     )
   );
