@@ -9379,7 +9379,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-light-white {
-  color: #F5F3F5;
+  color: #E7E4DA;
 }
 
 .text-red {
@@ -9387,11 +9387,11 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-light-grey {
-  color: #343a40;
+  color: #728086;
 }
 
 .text-dark-grey {
-  color: #404040;
+  color: #2B303B;
 }
 
 .text-black {
@@ -9457,7 +9457,7 @@ li > a:hover, a:hover {
 }
 
 .link-light {
-  color: #F5F3F5;
+  color: #E7E4DA;
 }
 
 .link-light:hover {
@@ -9475,7 +9475,7 @@ li > a:hover, a:hover {
 .nav-link {
   font-size: 1.5rem;
   font-weight: 600;
-  color: #F5F3F5 !important;
+  color: #E7E4DA !important;
 }
 
 .nav-link:hover {
@@ -9490,7 +9490,7 @@ li > a:hover, a:hover {
 
 .what-i-do > li > a {
   font-size: 1.5rem;
-  color: #F5F3F5;
+  color: #E7E4DA;
 }
 
 .what-i-do > li > a:hover {
@@ -9544,13 +9544,13 @@ body {
 }
 
 .button-dark-bg {
-  color: #F5F3F5;
-  border-color: #F5F3F5;
+  color: #E7E4DA;
+  border-color: #E7E4DA;
 }
 
 .button-dark-bg:hover {
   text-decoration: none;
-  color: #F5F3F5;
+  color: #E7E4DA;
   border-color: red;
 }
 

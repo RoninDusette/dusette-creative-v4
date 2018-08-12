@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Routes } from './Utils/Routes';
 import { NavBarContainer } from './base/NavBar/NavBarContainer';
-
+import FooterContainer from './Base/Footer/Containers/FooterContainer'
 
 class Main extends Component {
   render() {
@@ -9,6 +9,7 @@ class Main extends Component {
       <div>
         <NavBarContainer />
         <Routes />
+        <FooterContainer />
       </div>
     );
   }
