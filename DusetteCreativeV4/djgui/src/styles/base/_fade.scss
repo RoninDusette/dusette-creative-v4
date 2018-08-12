@@ -1,0 +1,14 @@
+body {
+  animation: fade-pages 1s;
+}
+
+@keyframes fade-pages {
+  
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}

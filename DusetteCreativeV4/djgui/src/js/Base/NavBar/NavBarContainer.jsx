@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import { fadePages } from '../../Utils/Effects'
 
 export const NavBarContainer = () => (
   <div>
     <div className={"fixed-top navbar-underlay"} />
     <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-transparent">
       <div className={"navbar-brand"}>
-        <Link className={"mx-auto"} to={{pathname: '/'}}>
+        <Link className={"mx-auto"} to={{pathname: '/'}} onClick={fadePages}>
             <img className="nav-brand-image d-inline-block mr-1" src="/static/DCv4/img/icons/logo-plain.png" alt=""/>
         </Link>
         <Link className={"nav-link navbar-text"} to={{pathname: '/'}}>
@@ -21,37 +21,37 @@ export const NavBarContainer = () => (
       <div className={"collapse navbar-collapse"} id="navbarSupportedContent">
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link className="nav-link" to={{ pathname: '/art' }}>ART</Link>
+            <Link className="nav-link" to={{ pathname: '/art' }} onClick={fadePages}>ART</Link>
           </li>
           <li className="nav-item">
             <em><i className="fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50"/></em>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={{ pathname: '/dev' }}>DEV</Link>
+            <Link className="nav-link" to={{ pathname: '/dev' }} onClick={fadePages}>DEV</Link>
           </li>
           <li className="nav-item">
             <em><i className="fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50"/></em>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={{ pathname: '/txt' }}>TXT</Link>
+            <Link className="nav-link" to={{ pathname: '/txt' }} onClick={fadePages}>TXT</Link>
           </li>
           <li className="nav-item">
             <em><i className="fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50"/></em>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={{ pathname: '/about' }}>BIO</Link>
+            <Link className="nav-link" to={{ pathname: '/about' }} onClick={fadePages}>BIO</Link>
           </li>
           <li className="nav-item">
             <em><i className="fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50"/></em>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={{ pathname: '/buy' }}>BUY</Link>
+            <Link className="nav-link" to={{ pathname: '/buy' }} onClick={fadePages}>BUY</Link>
           </li>
           <li className="nav-item">
             <em><i className="fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50"/></em>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to={{pathname: '/hey'}}>HEY</Link>
+            <Link className="nav-link" to={{pathname: '/hey'}} onClick={fadePages}>HEY</Link>
           </li>
         </ul>
       </div>

@@ -9401,10 +9401,11 @@ a.text-dark:hover, a.text-dark:focus {
 html, body {
   overflow-x: hidden;
   background-color: #212121;
+  font-size: 16px;
 }
 
-html, body {
-  font-size: 16px;
+html {
+  overflow-y: scroll;
 }
 
 h1, h2, h3, h4, li, li > a, a {
@@ -9494,6 +9495,29 @@ li > a:hover, a:hover {
 
 .what-i-do > li > a:hover {
   color: red;
+}
+
+body {
+  -webkit-animation: fade-pages 1s;
+          animation: fade-pages 1s;
+}
+
+@-webkit-keyframes fade-pages {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-pages {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .button {

@@ -41744,6 +41744,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.pageLoading = pageLoading;
+exports.fadePages = fadePages;
 var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 function pageLoading() {
@@ -41870,6 +41871,14 @@ $(document).ready(function () {
   });
 });
 
+// Page Fade in/out
+
+function fadePages() {
+  $('html').fadeOut('fast', function () {
+    $('html').fadeIn('slow');
+  });
+}
+
 /***/ }),
 
 /***/ "./src/js/Utils/Routes.jsx":
@@ -41939,6 +41948,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
+var _Effects = __webpack_require__(/*! ../../Utils/Effects */ "./src/js/Utils/Effects.js");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
@@ -41954,7 +41965,7 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
         { className: "navbar-brand" },
         _react2.default.createElement(
           _reactRouterDom.Link,
-          { className: "mx-auto", to: { pathname: '/' } },
+          { className: "mx-auto", to: { pathname: '/' }, onClick: _Effects.fadePages },
           _react2.default.createElement('img', { className: 'nav-brand-image d-inline-block mr-1', src: '/static/DCv4/img/icons/logo-plain.png', alt: '' })
         ),
         _react2.default.createElement(
@@ -41980,7 +41991,7 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             { className: 'nav-item' },
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/art' } },
+              { className: 'nav-link', to: { pathname: '/art' }, onClick: _Effects.fadePages },
               'ART'
             )
           ),
@@ -41998,7 +42009,7 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             { className: 'nav-item' },
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/dev' } },
+              { className: 'nav-link', to: { pathname: '/dev' }, onClick: _Effects.fadePages },
               'DEV'
             )
           ),
@@ -42016,7 +42027,7 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             { className: 'nav-item' },
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/txt' } },
+              { className: 'nav-link', to: { pathname: '/txt' }, onClick: _Effects.fadePages },
               'TXT'
             )
           ),
@@ -42034,7 +42045,7 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             { className: 'nav-item' },
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/about' } },
+              { className: 'nav-link', to: { pathname: '/about' }, onClick: _Effects.fadePages },
               'BIO'
             )
           ),
@@ -42052,7 +42063,7 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             { className: 'nav-item' },
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/buy' } },
+              { className: 'nav-link', to: { pathname: '/buy' }, onClick: _Effects.fadePages },
               'BUY'
             )
           ),
@@ -42070,7 +42081,7 @@ var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
             { className: 'nav-item' },
             _react2.default.createElement(
               _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/hey' } },
+              { className: 'nav-link', to: { pathname: '/hey' }, onClick: _Effects.fadePages },
               'HEY'
             )
           )

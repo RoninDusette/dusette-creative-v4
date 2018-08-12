@@ -227,3 +227,11 @@ $(document).ready(function () {
     })
   })
 })
+
+// Page Fade in/out
+
+export function fadePages() {
+  $('html').fadeOut('fast', function () {
+    $('html').fadeIn('slow');
+  });
+}
