@@ -25,5 +25,8 @@ export const HomeContent = () => (
         </li>
       </ul>
     </div>
+    <div className={"home-section-2-container"}>
+      <h3>blach</h3>
+    </div>
   </div>
 )

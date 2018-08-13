@@ -41441,6 +41441,15 @@ var HomeContent = exports.HomeContent = function HomeContent() {
           "inspired"
         )
       )
+    ),
+    _react2.default.createElement(
+      "div",
+      { className: "home-section-2-container" },
+      _react2.default.createElement(
+        "h3",
+        null,
+        "blach"
+      )
     )
   );
 };
