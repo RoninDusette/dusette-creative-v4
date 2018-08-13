@@ -7,10 +7,6 @@ class HomeContainer extends React.Component {
     super(props)
   }
 
-  componentDidMount () {
-    pageLoading();
-  }
-
   render () {
     return (
       <div>

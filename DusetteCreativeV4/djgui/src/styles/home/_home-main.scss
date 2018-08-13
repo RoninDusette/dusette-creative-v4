@@ -1,0 +1,31 @@
+.home-background-container {
+  background: url("/static/DCv4/img/backgrounds/background-home-yosemite-tunnel-view.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.home-background-overlay {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+  opacity: .7;
+  z-index: 10;
+}
+
+.home-title-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $orange;
+  z-index: 100;
+  opacity: .9;
+  mix-blend-mode: multiply;
+  background-color: $black;
+  height: 100vh;
+}

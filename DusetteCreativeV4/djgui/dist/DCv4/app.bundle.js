@@ -41232,8 +41232,6 @@ var _Main = __webpack_require__(/*! ./js/Main */ "./src/js/Main.js");
 
 var _Main2 = _interopRequireDefault(_Main);
 
-__webpack_require__(/*! ./js/Utils/Effects */ "./src/js/Utils/Effects.js");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _reactDom2.default.render(_react2.default.createElement(
@@ -41282,21 +41280,9 @@ var AboutContainer = function (_Component) {
   }
 
   _createClass(AboutContainer, [{
-    key: "render",
+    key: 'render',
     value: function render() {
-      return _react2.default.createElement(
-        "div",
-        null,
-        _react2.default.createElement("br", null),
-        _react2.default.createElement("br", null),
-        _react2.default.createElement("br", null),
-        _react2.default.createElement("br", null),
-        _react2.default.createElement(
-          "h1",
-          { className: "text-center text-white" },
-          "This is my About container component"
-        )
-      );
+      return _react2.default.createElement('div', null);
     }
   }]);
 
@@ -41329,23 +41315,7 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var FooterContent = exports.FooterContent = function FooterContent() {
-  return _react2.default.createElement(
-    "div",
-    { className: "container-fluid footer-wrapper mx-0 px-0 py-3" },
-    _react2.default.createElement(
-      "div",
-      { className: "row" },
-      _react2.default.createElement(
-        "div",
-        { className: "col-12 text-center text-light-grey" },
-        _react2.default.createElement(
-          "h1",
-          null,
-          "Footer"
-        )
-      )
-    )
-  );
+  return _react2.default.createElement('div', null);
 };
 
 /***/ }),
@@ -41418,7 +41388,7 @@ exports.default = FooterContainer;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 exports.HomeContent = undefined;
 
@@ -41429,216 +41399,50 @@ var _react2 = _interopRequireDefault(_react);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var HomeContent = exports.HomeContent = function HomeContent() {
-    return _react2.default.createElement(
-        "div",
-        { id: "home-content-wrapper" },
+  return _react2.default.createElement(
+    "div",
+    { className: "home-background-container" },
+    _react2.default.createElement(
+      "div",
+      { className: "home-title-wrapper pt-5" },
+      _react2.default.createElement("br", null),
+      _react2.default.createElement("br", null),
+      _react2.default.createElement(
+        "h1",
+        null,
+        "Dusette creativE"
+      ),
+      _react2.default.createElement(
+        "ul",
+        { className: "list-inline" },
         _react2.default.createElement(
-            "div",
-            { className: "home-hero-wrapper d-flex align-items-center justify-content-center", id: "home-hero-wrapper" },
-            _react2.default.createElement("div", { className: "home-hero-overlay" }),
-            _react2.default.createElement(
-                "div",
-                { className: "home-hero-text text-center pt-2" },
-                _react2.default.createElement(
-                    "h1",
-                    { className: "text-light-white py-1 px-5" },
-                    _react2.default.createElement(
-                        "strong",
-                        null,
-                        "Hi! I am Ronin Dusette. ",
-                        _react2.default.createElement("br", null),
-                        " I make pictures and type interwebz."
-                    )
-                )
-            )
+          "li",
+          { className: "list-inline-item" },
+          "edgy"
         ),
         _react2.default.createElement(
-            "div",
-            { className: "container-fluid home-section-2-wrapper pb-5 position-relative" },
-            _react2.default.createElement("div", { className: "grey-bg-texture" }),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement(
-                "div",
-                { className: "row px-5 mx-5" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-12 col-md-4 px-5 text-center", id: "home-what-i-do-box-1" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "inner-what-i-do-container py-5" },
-                        _react2.default.createElement(
-                            "a",
-                            { href: "#", className: "what-i-do-icon-link" },
-                            _react2.default.createElement("i", { className: "fas fa-terminal fa-6x mb-5" })
-                        ),
-                        _react2.default.createElement(
-                            "ul",
-                            { className: "list-inline what-i-do" },
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Networking & IT"
-                                )
-                            ),
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Full-Stack development"
-                                )
-                            ),
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Linux Admin"
-                                )
-                            )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-12 col-md-4 px-5 text-center", id: "home-what-i-do-box-2" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "inner-what-i-do-container py-5" },
-                        _react2.default.createElement(
-                            "a",
-                            { href: "#", className: "what-i-do-icon-link" },
-                            _react2.default.createElement("i", { className: "fas fa-camera fa-6x mb-5" })
-                        ),
-                        _react2.default.createElement(
-                            "ul",
-                            { className: "list-inline what-i-do" },
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Portraits"
-                                )
-                            ),
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Fine Art"
-                                )
-                            ),
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Events"
-                                )
-                            )
-                        )
-                    )
-                ),
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-12 col-md-4 px-5 text-center", id: "home-what-i-do-box-3" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "inner-what-i-do-container py-5" },
-                        _react2.default.createElement(
-                            "a",
-                            { href: "#", className: "what-i-do-icon-link" },
-                            _react2.default.createElement("i", { className: "fas fa-video fa-6x mb-5" })
-                        ),
-                        _react2.default.createElement(
-                            "ul",
-                            { className: "list-inline what-i-do" },
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Documentary"
-                                )
-                            ),
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Travel"
-                                )
-                            ),
-                            _react2.default.createElement(
-                                "li",
-                                null,
-                                _react2.default.createElement(
-                                    "a",
-                                    { href: "#" },
-                                    "Music"
-                                )
-                            )
-                        )
-                    )
-                )
-            ),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement("br", null),
-            _react2.default.createElement(
-                "div",
-                { className: "row mt-5 mb-3" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-12 text-center" },
-                    _react2.default.createElement(
-                        "a",
-                        { className: "button button-expands button-dark-bg lets-create-cta", href: "/contact/" },
-                        "Let's Create"
-                    )
-                )
-            )
+          "li",
+          { className: "list-inline-item" },
+          _react2.default.createElement("i", { className: "fas fa-ellipsis-v" })
         ),
         _react2.default.createElement(
-            "div",
-            { className: "container-fluid home-section-3-container px-3 mx-0 w-100 position-relative" },
-            _react2.default.createElement("div", { className: "grey-bg-texture-inverted" }),
-            _react2.default.createElement(
-                "div",
-                { className: "row" },
-                _react2.default.createElement(
-                    "div",
-                    { className: "col-12 text-center home-section-3-border" },
-                    _react2.default.createElement(
-                        "div",
-                        { className: "home-section-3-text-wrapper" },
-                        _react2.default.createElement(
-                            "h4",
-                            { className: "home-section-3-text mt-4", id: "home-section-3-text-1" },
-                            "my mind is always on technology..."
-                        ),
-                        _react2.default.createElement(
-                            "h4",
-                            { className: "home-section-3-text mt-4", id: "home-section-3-text-2" },
-                            "$ sudo apt install EVERYTHING"
-                        )
-                    )
-                )
-            )
+          "li",
+          { className: "list-inline-item" },
+          "innovative"
+        ),
+        _react2.default.createElement(
+          "li",
+          { className: "list-inline-item" },
+          _react2.default.createElement("i", { className: "fas fa-ellipsis-v" })
+        ),
+        _react2.default.createElement(
+          "li",
+          { className: "list-inline-item" },
+          "inspired"
         )
-    );
+      )
+    )
+  );
 };
 
 /***/ }),
@@ -41663,10 +41467,6 @@ var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _Effects = __webpack_require__(/*! ../../Utils/Effects */ "./src/js/Utils/Effects.js");
-
-var _HomeLoaderContainer = __webpack_require__(/*! ../../Misc/Containers/HomeLoaderContainer */ "./src/js/Misc/Containers/HomeLoaderContainer.jsx");
-
 var _HomeContent = __webpack_require__(/*! ../Components/HomeContent */ "./src/js/Home/Components/HomeContent.jsx");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -41687,17 +41487,11 @@ var HomeContainer = function (_React$Component) {
   }
 
   _createClass(HomeContainer, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      (0, _Effects.pageLoading)();
-    }
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(
         'div',
         null,
-        _react2.default.createElement(_HomeLoaderContainer.HomeLoaderContainer, null),
         _react2.default.createElement(_HomeContent.HomeContent, null)
       );
     }
@@ -41775,217 +41569,6 @@ exports.default = Main;
 
 /***/ }),
 
-/***/ "./src/js/Misc/Containers/HomeLoaderContainer.jsx":
-/*!********************************************************!*\
-  !*** ./src/js/Misc/Containers/HomeLoaderContainer.jsx ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.HomeLoaderContainer = undefined;
-
-var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var _react2 = _interopRequireDefault(_react);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var HomeLoaderContainer = exports.HomeLoaderContainer = function HomeLoaderContainer() {
-  return _react2.default.createElement(
-    "div",
-    { id: "loader-wrapper" },
-    _react2.default.createElement(
-      "div",
-      { className: "loader-img-wrapper text-center" },
-      _react2.default.createElement("img", { src: "/static/DCv4/img/icons/logo-plain.png", className: "loader-img", alt: "" })
-    ),
-    _react2.default.createElement(
-      "h3",
-      { id: "loader-text" },
-      _react2.default.createElement(
-        "span",
-        { id: "loader-text-word" },
-        "Loading"
-      ),
-      _react2.default.createElement(
-        "span",
-        { id: "loader-text-dot-1" },
-        "."
-      ),
-      _react2.default.createElement(
-        "span",
-        {
-          id: "loader-text-dot-2" },
-        "."
-      ),
-      _react2.default.createElement(
-        "span",
-        { id: "loader-text-dot-3" },
-        "."
-      )
-    )
-  );
-};
-
-/***/ }),
-
-/***/ "./src/js/Utils/Effects.js":
-/*!*********************************!*\
-  !*** ./src/js/Utils/Effects.js ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.pageLoading = pageLoading;
-exports.fadePages = fadePages;
-var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-
-function pageLoading() {
-  $('.navbar, .navbar-underlay').hide();
-  $('#home-content-wrapper').hide();
-  $('#loader-wrapper').hide();
-  $('#home-hero-wrapper').hide();
-  $('#loader-wrapper').fadeIn('slow');
-  setTimeout(showPage, 2500);
-}
-
-function showPage() {
-  $('#loader-wrapper').fadeOut();
-  $('#home-content-wrapper').fadeIn();
-  $('#home-hero-wrapper').fadeIn();
-  homeHeroTextLoader();
-  slideInNavbar();
-}
-
-// slide in nav
-
-function slideInNavbar() {
-  setTimeout(function () {
-    $('.navbar-underlay').fadeIn(400, function () {
-      $('.navbar').slideDown(400);
-    });
-  }, 500);
-}
-
-// Home hero text slide effect
-
-function homeHeroTextLoader() {
-  homeHeroTextLoader = setTimeout(function () {
-    var string = $('.home-hero-text > h1 > strong').text();
-    $('.home-hero-text > h1 > strong').html('');
-    var stringTrimmed = $.trim(string);
-    var arr = $.map(stringTrimmed.split(''), function (letter) {
-      return $('<span>' + letter + '</span>');
-    });
-
-    var destination = $('.home-hero-text > h1 > strong');
-
-    var c = 0;
-
-    var i = setInterval(function () {
-      if (c === 24) arr[c].appendTo(destination).html('<br/>');
-      arr[c].appendTo(destination).hide().fadeIn(500);
-      c += 1;
-
-      if (c >= arr.length) clearInterval(i);
-    }, 75);
-  });
-}
-
-// Home What I Do fade effect
-
-$(document).ready(function () {
-  $('#home-what-i-do-box-1, #home-what-i-do-box-2, #home-what-i-do-box-3').hide();
-});
-
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 250) {
-    $('#home-what-i-do-box-1').fadeIn('slow', function () {
-      $('#home-what-i-do-box-2').fadeIn('slow', function () {
-        $('#home-what-i-do-box-3').fadeIn('slow');
-      });
-    });
-  }
-});
-
-// Section 3 effects
-
-$(window).scroll(function () {
-  if ($(window).scrollTop() > 800) {
-    $('.home-section-3-border').addClass(' home-section-3-border-in-view');
-  }
-});
-
-function doMath() {
-  var speed = Math.floor(Math.random().toFixed(2) * 20 + 10);
-  var delay = Math.floor(Math.random().toFixed(2) * 20 + 1);
-  var position = Math.floor(Math.random().toFixed(3) * 100 + 1);
-  var size = Math.floor(Math.random().toFixed(1) * 10 + 1);
-  var sizePartial = Math.floor(Math.random().toFixed(1) * 10 + 1);
-
-  return [speed, delay, position, size, sizePartial];
-}
-
-function shuffleArray(array) {
-  for (var i = array.length - 1; i > 0; i--) {
-    var j = Math.floor(Math.random() * (i + 1));
-    var temp = array[i];
-    array[i] = array[j];
-    array[j] = temp;
-  }
-
-  return array;
-}
-
-$(document).ready(function () {
-  var iconArray = ['fas fa-music', 'fas fa-camera', 'fas fa-download', 'fas fa-location-arrow', 'fab fa-html5', 'fab fa-css3', 'fas fa-share', 'fas fa-commenting', 'fab fa-maxcdn', 'fas fa-rocket', 'fab fa-500px', 'fab fa-firefox', 'fas fa-tablet', 'fab fa-chrome', 'fas fa-tags', 'fas fa-chain-broken', 'fab fa-wikipedia-w', 'fas fa-code', 'fas fa-terminal', 'fas fa-location-arrow', 'fas fa-reply-all', 'fas fa-hand-spock-o', 'fas fa-gamepad', 'fa fa-folder-0', 'fab fa-github-alt', 'fa fa-hand-grab-o', 'fas fa-desktop', 'fas fa-laptop', 'fas fa-tablet', 'fas fa-mobile', 'fas fa-mouse-pointer', 'fas fa-battery-half', 'fas fa-fighter-jet', 'fas fa-server', 'fab fa-google-plus-square', 'fas fa-cloud', 'fas fa-link', 'fab fa-github-o', 'fas fa-hdd-o', 'fas fa-sliders', 'fab fa-facebook', 'fab fa-codepen', 'fas fa-camera-retro', 'fab fa-jsfiddle', 'fab fa-rebel', 'fab fa-empire', 'fab fa-steam', 'fab fa-soundcloud', 'fab fa-pied-piper', 'fab fa-slack', 'fa fa-video-camera', 'fas fa-music', 'fas fa-camera', 'fas fa-download', 'fas fa-location-arrow', 'fab fa-html5', 'fab fa-css3', 'fas fa-share', 'fas fa-commenting', 'fab fa-maxcdn', 'fas fa-rocket', 'fab fa-500px', 'fab fa-firefox', 'fas fa-tablet', 'fab fa-chrome', 'fas fa-tags', 'fas fa-chain-broken', 'fab fa-wikipedia-w', 'fas fa-code', 'fas fa-terminal', 'fas fa-location-arrow', 'fas fa-reply-all', 'fas fa-hand-spock-o', 'fas fa-gamepad', 'fa fa-folder-0', 'fab fa-github-alt', 'fa fa-hand-grab-o', 'fas fa-desktop', 'fas fa-laptop', 'fas fa-tablet', 'fas fa-mobile', 'fas fa-mouse-pointer', 'fas fa-battery-half', 'fas fa-fighter-jet', 'fas fa-server', 'fab fa-google-plus-square', 'fas fa-cloud', 'fas fa-link', 'fab fa-github-o', 'fas fa-hdd-o', 'fas fa-sliders', 'fab fa-facebook', 'fab fa-codepen', 'fas fa-camera-retro', 'fab fa-jsfiddle', 'fab fa-rebel', 'fab fa-empire', 'fab fa-steam', 'fab fa-soundcloud', 'fab fa-pied-piper', 'fab fa-slack', 'fa fa-video-camera'];
-
-  var shuffledIconArray = shuffleArray(iconArray);
-
-  $.each(shuffledIconArray, function (i, val) {
-
-    var vals = doMath();
-
-    var speed = vals[0];
-    var delay = vals[1];
-    var position = vals[2];
-    var size = vals[3];
-    var sizePartial = vals[4];
-
-    $('.home-section-3-border').append('<i class=\'' + val + '\' id=\'icon-' + i + '\'></i>');
-
-    $('#icon-' + i).css({
-      'position': 'absolute',
-      'font-size': size + '.' + sizePartial + 'rem',
-      'animation-delay': delay + 's',
-      'animation-duration': speed + 's',
-      'left': position + 'rem'
-    });
-  });
-});
-
-// Page Fade in/out
-
-function fadePages() {
-  $('html').fadeOut('fast', function () {
-    $('html').fadeIn('slow');
-  });
-}
-
-/***/ }),
-
 /***/ "./src/js/Utils/Routes.jsx":
 /*!*********************************!*\
   !*** ./src/js/Utils/Routes.jsx ***!
@@ -42053,147 +41636,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
-var _Effects = __webpack_require__(/*! ../../Utils/Effects */ "./src/js/Utils/Effects.js");
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var NavBarContainer = exports.NavBarContainer = function NavBarContainer() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement('div', { className: "fixed-top navbar-underlay" }),
-    _react2.default.createElement(
-      'nav',
-      { className: 'navbar fixed-top navbar-expand-lg navbar-light bg-transparent' },
-      _react2.default.createElement(
-        'div',
-        { className: "navbar-brand" },
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { className: "mx-auto", to: { pathname: '/' }, onClick: _Effects.fadePages },
-          _react2.default.createElement('img', { className: 'nav-brand-image d-inline-block mr-1', src: '/static/DCv4/img/icons/logo-plain.png', alt: '' })
-        ),
-        _react2.default.createElement(
-          _reactRouterDom.Link,
-          { className: "nav-link navbar-text", to: { pathname: '/' } },
-          'Dusette Creative'
-        )
-      ),
-      _react2.default.createElement(
-        'button',
-        { className: "navbar-toggler", type: 'button', 'data-toggle': 'collapse', 'data-target': '#navbarSupportedContent',
-          'aria-controls': 'navbarSupportedContent', 'aria-expanded': 'false', 'aria-label': 'Toggle navigation' },
-        _react2.default.createElement('span', { className: 'navbar-toggler-icon' })
-      ),
-      _react2.default.createElement(
-        'div',
-        { className: "collapse navbar-collapse", id: 'navbarSupportedContent' },
-        _react2.default.createElement(
-          'ul',
-          { className: 'navbar-nav ml-auto' },
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/art' }, onClick: _Effects.fadePages },
-              'ART'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/dev' }, onClick: _Effects.fadePages },
-              'DEV'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/txt' }, onClick: _Effects.fadePages },
-              'TXT'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/about' }, onClick: _Effects.fadePages },
-              'BIO'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/buy' }, onClick: _Effects.fadePages },
-              'BUY'
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              'em',
-              null,
-              _react2.default.createElement('i', { className: 'fas fa-ellipsis-v text-light-white pt-3 mx-1 text-white-50' })
-            )
-          ),
-          _react2.default.createElement(
-            'li',
-            { className: 'nav-item' },
-            _react2.default.createElement(
-              _reactRouterDom.Link,
-              { className: 'nav-link', to: { pathname: '/hey' }, onClick: _Effects.fadePages },
-              'HEY'
-            )
-          )
-        )
-      )
-    )
-  );
+  return _react2.default.createElement('div', null);
 };
 
 /***/ }),

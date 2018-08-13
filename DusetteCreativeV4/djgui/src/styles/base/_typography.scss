@@ -1,4 +1,5 @@
-
+$main-font: 'Julius Sans One', sans-serif;
+$sec-font: 'Raleway', sans-serif;
 
 $size-xsmall: .50rem;
 $size-small: .75rem;
@@ -6,3 +7,37 @@ $size-regular: 1rem;
 $size-large: 1.5rem;
 $size-xlarge: 2rem;
 $size-xxlarge: 3rem;
+
+
+h1, h2, h3, h4, a {
+  font-family: $main-font;
+}
+
+h5, h6, p, li {
+  font-family: $sec-font;
+}
+
+h1 {
+  font-size: $size-xxlarge;
+}
+
+h2 {
+  font-size: $size-xlarge;
+}
+
+h3 {
+  font-size: $size-large;
+}
+
+h4 {
+  font-size: $size-regular;
+}
+
+h5 {
+  font-size: $size-small;
+}
+
+h6 {
+  font-size: $size-xsmall;
+}
+
