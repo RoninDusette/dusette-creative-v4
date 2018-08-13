@@ -1,6 +1,4 @@
 import React from 'react';
-import { pageLoading } from '../../Utils/Effects';
-import { HomeLoaderContainer } from '../../Misc/Containers/HomeLoaderContainer';
 import { HomeContent } from '../Components/HomeContent';
 
 
@@ -16,7 +14,6 @@ class HomeContainer extends React.Component {
   render () {
     return (
       <div>
-        <HomeLoaderContainer />
         <HomeContent />
       </div>
     );
