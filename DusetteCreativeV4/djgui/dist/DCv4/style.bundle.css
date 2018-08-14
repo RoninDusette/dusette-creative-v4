@@ -9068,6 +9068,28 @@ h6 {
   font-size: 0.5rem;
 }
 
+.down-arrow {
+  width: 3%;
+  position: relative;
+  bottom: -100px;
+  -webkit-animation: spinning-down-arrow 7s linear forwards infinite;
+          animation: spinning-down-arrow 7s linear forwards infinite;
+}
+
+@-webkit-keyframes spinning-down-arrow {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spinning-down-arrow {
+  50% {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
 .home-background-container {
   background: url("/static/DCv4/img/backgrounds/background-home-yosemite-tunnel-view.jpg") no-repeat center center;
   background-size: cover;

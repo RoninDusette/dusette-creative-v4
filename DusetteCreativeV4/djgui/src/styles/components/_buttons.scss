@@ -1,0 +1,14 @@
+.down-arrow {
+  width: 3%;
+  position: relative;
+  bottom: -100px;
+  animation: spinning-down-arrow 7s linear forwards infinite;
+}
+
+@keyframes spinning-down-arrow {
+  
+  50% {
+    transform: rotateY(360deg);
+  }
+  
+}

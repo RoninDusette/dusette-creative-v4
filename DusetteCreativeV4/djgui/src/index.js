@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 import 'popper.js';
 import 'bootstrap';
 import './styles/styles.css';
+import './js/Utils/UXFixes';
 import Main from './js/Main';
 
 
