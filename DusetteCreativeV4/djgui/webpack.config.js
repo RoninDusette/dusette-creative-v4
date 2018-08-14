@@ -41,7 +41,9 @@ const config = {
         test: /\.js($|\?)|\.jsx($|\?)/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader'
+          loader: 'babel-loader',
+          babelrc: false,
+          query: [['es2015', { modules: false }, 'react', 'stage-3']]
         }
       },
       {
@@ -88,11 +90,6 @@ const config = {
       filename: 'style.bundle.css',
     }),
     new BundleTracker({filename: './webpack-stats.json'}),
-    new webpack.ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery'
-    }),
     new CopyWebpackPlugin([{
       from: path.resolve(paths.SRC, 'assets/img'), to: path.resolve(paths.DIST, 'img')
     }]),

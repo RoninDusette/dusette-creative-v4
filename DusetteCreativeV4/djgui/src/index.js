@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-import 'popper.js';
-import 'bootstrap';
-import './styles/styles.css';
-import './js/Utils/UXFixes';
+const jQuery = require('jquery')(window);
+const $ = jQuery;
+const popper = require('popper.js');
+const bootstrap = require('bootstrap');
 import Main from './js/Main';
 
 

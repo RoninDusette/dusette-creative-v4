@@ -1,5 +1,1 @@
-import './Vendor/jquery.nicescroll.js';
-
-  $(function () {
-    $("body").niceScroll({smoothscroll: true, scrollspeed: 9500});
-  });
+// Smooth scroll with mouse wheel
