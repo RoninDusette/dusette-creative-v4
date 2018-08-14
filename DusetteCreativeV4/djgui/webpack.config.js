@@ -42,8 +42,6 @@ const config = {
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
-          babelrc: false,
-          query: [['es2015', { modules: false }, 'react', 'stage-3']]
         }
       },
       {
@@ -76,11 +74,25 @@ const config = {
       },
       {
         test: /\.(woff|woff2|ttf|otf|eot|ttc)$/,
-        loader: 'url-loader'
+        use: [
+          {
+            loader: 'url-loader'
+          },
+          {
+            loader: 'file-loader'
+          }
+        ]
       },
       {
         test: /\.(jpg|jpeg|png|gif|bmp|ico|svg)$/,
-        loader: 'url-loader'
+        use: [
+          {
+            loader: 'url-loader'
+          },
+          {
+            loader: 'file-loader'
+          }
+        ]
       },
     ]
   },
@@ -88,6 +100,13 @@ const config = {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'style.bundle.css',
+    }),
+    new webpack.ProvidePlugin({
+      underscore: "underscore"
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     }),
     new BundleTracker({filename: './webpack-stats.json'}),
     new CopyWebpackPlugin([{
