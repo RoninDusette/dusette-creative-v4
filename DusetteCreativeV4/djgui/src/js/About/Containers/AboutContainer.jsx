@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
+import { AboutContent } from '../Components/AboutContent'
 
 class AboutContainer extends Component {
   render () {
     return (
-      <div>
-
-      </div>
+      <AboutContent />
     );
   }
 }

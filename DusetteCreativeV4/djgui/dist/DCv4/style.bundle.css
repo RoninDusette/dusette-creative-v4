@@ -9033,12 +9033,20 @@ html, body {
   background-color: #161917;
 }
 
-h1, h2, h3, h4, a {
+h1, h2, a {
   font-family: "Montserrat Alternates", sans-serif;
 }
 
-h5, h6, p, li {
+h3, h4, li {
   font-family: "Josefin Slab", sans-serif;
+}
+
+li {
+  -webkit-font-smoothing: antialiased;
+}
+
+h5, h6, p {
+  font-family: "Palanquin", san-serif;
 }
 
 h1 {
@@ -9047,6 +9055,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
+  -webkit-font-smoothing: antialiased;
 }
 
 h3 {
@@ -9087,6 +9096,15 @@ h6 {
   }
 }
 
+.navbar-wrapper {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 200px;
+  background: transparent;
+}
+
 .home-background-container {
   background: url("/static/DCv4/img/backgrounds/background-home-yosemite-tunnel-view.jpg") no-repeat center center;
   background-size: cover;
@@ -9096,7 +9114,6 @@ h6 {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   overflow-x: hidden;
-  overflow-y: scroll;
   z-index: -3;
 }
 

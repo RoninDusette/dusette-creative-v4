@@ -1,5 +1,6 @@
 $main-font: 'Montserrat Alternates', sans-serif;
 $sec-font: 'Josefin Slab', sans-serif;
+$ter-font: 'Palanquin', san-serif;
 
 $size-xsmall: .50rem;
 $size-small: .75rem;
@@ -9,12 +10,20 @@ $size-xlarge: 2rem;
 $size-xxlarge: 3rem;
 
 
-h1, h2, h3, h4, a {
+h1, h2, a {
   font-family: $main-font;
 }
 
-h5, h6, p, li {
+h3, h4, li {
   font-family: $sec-font;
+}
+
+li {
+  -webkit-font-smoothing: antialiased;
+}
+
+h5, h6, p {
+  font-family: $ter-font;
 }
 
 h1 {
@@ -23,6 +32,7 @@ h1 {
 
 h2 {
   font-size: $size-xlarge;
+  -webkit-font-smoothing: antialiased;
 }
 
 h3 {
