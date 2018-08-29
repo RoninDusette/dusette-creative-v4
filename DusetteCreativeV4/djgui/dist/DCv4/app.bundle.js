@@ -41417,7 +41417,7 @@ var HomeContent = exports.HomeContent = function HomeContent() {
       _react2.default.createElement(
         "h1",
         null,
-        "Dusette creativE"
+        "m  Dusette creativE"
       ),
       _react2.default.createElement(
         "ul",

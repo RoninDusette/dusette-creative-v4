@@ -6,7 +6,7 @@ export const HomeContent = () => (
     <div className={"home-title-wrapper pt-5"}>
       <br/>
       <br/>
-      <h1>Dusette creativE</h1>
+      <h1>m  Dusette creativE</h1>
       <ul className={"list-inline"}>
         <li className={"list-inline-item"}>
           edgy
