@@ -1,11 +1,11 @@
-const path = require('path')
-const webpack = require('webpack')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const AutoPrefixer = require('autoprefixer')
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
-const BundleTracker = require('webpack-bundle-tracker')
-const CopyWebpackPlugin =require('copy-webpack-plugin')
+const path = require('path');
+const webpack = require('webpack');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const AutoPrefixer = require('autoprefixer');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const BundleTracker = require('webpack-bundle-tracker');
+const CopyWebpackPlugin =require('copy-webpack-plugin');
 
 const paths = {
   DIST: path.resolve(__dirname, 'dist/DCv4'),
@@ -113,6 +113,6 @@ const config = {
       from: path.resolve(paths.SRC, 'assets/img'), to: path.resolve(paths.DIST, 'img')
     }]),
   ],
-}
+};
 
 module.exports = config;
