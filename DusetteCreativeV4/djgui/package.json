@@ -19,6 +19,9 @@
   },
   "homepage": "https://github.com/RoninDusette/dusette-creative-v4#readme",
   "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
     "autoprefixer": "latest",
     "babel": "latest",
     "babel-core": "latest",
@@ -44,6 +47,7 @@
     "precss": "^3.1.2",
     "react": "latest",
     "react-dom": "latest",
+    "react-easy-state": "^6.1.1",
     "react-redux": "latest",
     "react-router": "^4.3.1",
     "react-router-dom": "^4.3.1",

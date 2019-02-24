@@ -5,10 +5,10 @@ import AboutContainer from '../About/Containers/AboutContainer'
 
 
 export const Routes = () => (
-  <div>
+  <React.Fragment>
     <Switch>
       <Route exact path={'/'} component={HomeContainer}/>
       <Route exact path={'/about'} component={AboutContainer}/>
     </Switch>
-  </div>
+  </React.Fragment>
 )

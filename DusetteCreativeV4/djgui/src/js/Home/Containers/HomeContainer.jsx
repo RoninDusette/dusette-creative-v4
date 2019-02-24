@@ -1,6 +1,13 @@
 import React from 'react';
-import { HomeContent } from '../Components/HomeContent';
+import { view, store } from 'react-easy-state';
+import HomeContent from '../Components/HomeContent';
 
+
+const stores = store(
+    {
+      click: 'clicked'
+    }
+)
 
 class HomeContainer extends React.Component {
   constructor (props) {
@@ -9,11 +16,11 @@ class HomeContainer extends React.Component {
 
   render () {
     return (
-      <div>
+      <React.Fragment>
         <HomeContent />
-      </div>
+      </React.Fragment>
     );
   }
 }
 
-export default HomeContainer;
+export default view(HomeContainer)

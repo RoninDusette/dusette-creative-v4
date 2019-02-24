@@ -5,16 +5,14 @@ import { Routes } from './Utils/Routes';
 import NavBarContainer from './Base/NavBar/Containers/NavBarContainer';
 import FooterContainer from './Base/Footer/Containers/FooterContainer'
 
-class Main extends Component {
+export default class Main extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Routes />
         <NavBarContainer/>
         <FooterContainer />
-      </div>
+      </React.Fragment>
     );
   }
 }
-
-export default Main;

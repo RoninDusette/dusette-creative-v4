@@ -30,8 +30,8 @@
   color: $orange;
   z-index: -1;
   opacity: .9;
-  mix-blend-mode: multiply;
-  background-color: $black;
+  mix-blend-mode: hard-light;
+  background-color: #292929;
   height: 100vh;
   transform: translateZ(-5px) scale(6);
 }
@@ -42,4 +42,14 @@
   position: relative;
   display: block;
   z-index: 1;
+}
+
+.home-subtitle-list {
+  background: rgba(0, 0, 0, .4);
+  color: #fbd2a7;
+  border-radius: 15%;
+}
+
+.home-subtitle-list-item {
+  text-shadow: #D2D2D4 1px -1px 3px;
 }
