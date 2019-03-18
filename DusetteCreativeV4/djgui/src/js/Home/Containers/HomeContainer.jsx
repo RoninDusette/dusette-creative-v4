@@ -1,13 +1,6 @@
 import React from 'react';
-import { view, store } from 'react-easy-state';
 import HomeContent from '../Components/HomeContent';
 
-
-const stores = store(
-    {
-      click: 'clicked'
-    }
-)
 
 class HomeContainer extends React.Component {
   constructor (props) {
@@ -23,4 +16,4 @@ class HomeContainer extends React.Component {
   }
 }
 
-export default view(HomeContainer)
+export default HomeContainer

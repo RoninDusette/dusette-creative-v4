@@ -1,17 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import 'popper.js';
-import 'bootstrap';
-import $ from 'jquery';
-window.$ = $;
-window.jQuery = jQuery;
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Main from './js/Main';
 
 
 ReactDOM.render((
-  <BrowserRouter>
     <Main/>
-  </BrowserRouter>
 ), document.getElementById('site-content'));
 

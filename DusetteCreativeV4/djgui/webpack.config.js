@@ -1,4 +1,4 @@
-zconst path = require('path');
+const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const AutoPrefixer = require('autoprefixer');
@@ -103,10 +103,6 @@ const config = {
     }),
     new webpack.ProvidePlugin({
       underscore: "underscore"
-    }),
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery"
     }),
     new BundleTracker({filename: './webpack-stats.json'}),
     new CopyWebpackPlugin([{

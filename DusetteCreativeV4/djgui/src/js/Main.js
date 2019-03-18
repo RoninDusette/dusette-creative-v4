@@ -1,18 +1,15 @@
 import React, { Component } from 'react';
+import HomeContainer from './Home/Containers/HomeContainer'
 import '../styles/styles.css';
-import './Utils/UXFixes';
-import { Routes } from './Utils/Routes';
-import NavBarContainer from './Base/NavBar/Containers/NavBarContainer';
-import FooterContainer from './Base/Footer/Containers/FooterContainer'
 
-export default class Main extends Component {
+class Main extends Component {
   render() {
     return (
-      <React.Fragment>
-        <Routes />
-        <NavBarContainer/>
-        <FooterContainer />
-      </React.Fragment>
+        <React.Fragment>
+            <HomeContainer />
+        </React.Fragment>
     );
   }
 }
+
+export default Main;
