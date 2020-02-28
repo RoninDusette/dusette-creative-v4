@@ -2,3 +2,4 @@
 *.pyc
 media_temp/
 static_temp/
+/node_modules/

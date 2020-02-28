@@ -1,0 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "./base/base.scss";
+@import "./components/components.scss";
+@import "./navbar/navbar.scss";
+@import "./home/home.scss";

@@ -1,0 +1,55 @@
+.home-background-container {
+  background: url("/static/DCv4/img/backgrounds/background-home-yosemite-tunnel-view.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  z-index: -3;
+  
+}
+
+.home-background-overlay {
+  position: absolute;
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $black;
+  opacity: .7;
+  z-index: -2;
+}
+
+.home-title-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $orange;
+  z-index: -1;
+  opacity: .9;
+  mix-blend-mode: hard-light;
+  background-color: #292929;
+  height: 100vh;
+  transform: translateZ(-5px) scale(6);
+}
+
+.home-section-2-container {
+  min-height: 500px;
+  background: white;
+  position: relative;
+  display: block;
+  z-index: 1;
+}
+
+.home-subtitle-list {
+  background: rgba(0, 0, 0, .4);
+  color: #fbd2a7;
+  border-radius: 15%;
+}
+
+.home-subtitle-list-item {
+  text-shadow: #D2D2D4 1px -1px 3px;
+}
